@@ -10,12 +10,17 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <a id="top" class="skip-link">Skip to content</a>
 
   <header class="site-header" role="banner">
+    <div class="header-top-bar">
+      <div class="container">
+        <a href="tel:+306981955857" class="header-phone" aria-label="Call us">(+30) 698 195 5857</a>
+      </div>
+    </div>
     <div class="container header-inner">
       <a href="index.html" class="logo">
         <img src="images/logo.png" alt="LaFeyra Luxury rooms" width="150" height="auto" />
@@ -65,9 +70,10 @@
           <div class="hero-bg" style="background-image: url('images/hero-slide1.png');"></div>
           <div class="hero-overlay">
             <div class="container hero-home-inner">
-              <h1 class="hero-home-title">Relax and enjoy<br />your holiday</h1>
-              <p class="hero-home-subtitle">AMAZING HOTEL IN THASSOS</p>
-              <a href="contact.html" class="btn btn-primary">BOOK NOW</a>
+              <p class="hero-home-label">EXQUISITE HOTEL</p>
+              <h1 class="hero-home-title">ENJOY A LUXURY EXPERIENCE</h1>
+              <p class="hero-home-desc">Welcome to Lafeyra luxury rooms</p>
+              <a href="rooms.html" class="btn btn-hero-outline">VIEW ROOMS</a>
             </div>
           </div>
         </div>
@@ -76,9 +82,9 @@
           <div class="hero-overlay">
             <div class="container hero-home-inner">
               <p class="hero-home-label">EXQUISITE HOTEL</p>
-              <h1 class="hero-home-title">Greek hospitality at its best</h1>
+              <h1 class="hero-home-title">GREEK HOSPITALITY AT ITS BEST</h1>
               <p class="hero-home-desc">We are here to provide our guests with everything they need for a special holiday.</p>
-              <a href="contact.html" class="btn btn-primary">BOOK NOW</a>
+              <a href="rooms.html" class="btn btn-hero-outline">VIEW ROOMS</a>
             </div>
           </div>
         </div>
@@ -87,8 +93,8 @@
           <div class="hero-overlay">
             <div class="container hero-home-inner">
               <p class="hero-home-label">EXQUISITE HOTEL</p>
-              <h1 class="hero-home-title">Enjoy a luxury experience</h1>
-              <p class="hero-home-desc">Welcome to LaFeyra luxury rooms.</p>
+              <h1 class="hero-home-title">EXCEPTIONAL LOCATION</h1>
+              <p class="hero-home-desc">Close your eyes...Imagine waking up everyday to a priceless view</p>
               <a href="rooms.html" class="btn btn-hero-outline">VIEW ROOMS</a>
             </div>
           </div>
@@ -107,7 +113,7 @@
         <div class="home-intro-text">
           <p class="home-intro-label">LIMENARIA</p>
           <h2 class="home-intro-title">LAFEYRA HOTEL</h2>
-          <p class="home-intro-desc">LaFeyra Hotel is situated in the beautiful village of Limenaria, just a short walk from the beach and the village center. It is the ideal choice for a relaxing holiday on Thassos island.</p>
+          <p class="home-intro-desc">LaFeyra Hotel is situated in the picturesque village of Limenaria, on the southern part of Thassos island. Conveniently located, just a few meters away from the wonderful beach of Limenaria, yet sufficiently close to the center of the village with all the taverns, restaurants, shops and bars. The breathing distance from the beach gives you the opportunity to spend quality and relaxing time enjoying the crystal clear waters of the Aegean sea, without moving far from the comfort of your hotel. LaFeyra Hotel is an ideal choice for anyone who wishes to experience the beauties of Thassos island, by enjoying a relaxed holiday at the same time.</p>
         </div>
         <div class="home-intro-features">
           <div class="home-feature">
@@ -167,17 +173,7 @@
       </div>
     </section>
 
-    <!-- 4. Restaurant teaser: DELICIOUS TRADITION / OUR RESTAURANT / READ MORE -->
-    <section class="section home-restaurant-teaser">
-      <div class="container home-restaurant-teaser-inner">
-        <h2 class="home-restaurant-title">DELICIOUS TRADITION</h2>
-        <p class="home-restaurant-label">OUR RESTAURANT</p>
-        <p class="home-restaurant-desc">Overlooking the calm blue waters of the Aegean sea, Molos restaurant serves delicious Greek food by keeping faithful to the traditional recipes &amp; most importantly the use of fresh ingredients. The simplicity &amp; freshness of the Greek cuisine promises to be a gastronomy experience that you&rsquo;ll never forget.</p>
-        <a href="restaurant.html" class="btn btn-primary">READ MORE</a>
-      </div>
-    </section>
-
-    <!-- 5. 3 Reasons to Book: dark green, 3 cols, BOOK NOW outline -->
+    <!-- 4. 3 Reasons to Book: dark green, 3 cols, BOOK NOW outline -->
     <section class="home-reasons">
       <div class="container">
         <h2 class="home-reasons-title">3 REASONS TO BOOK WITH US</h2>
@@ -198,6 +194,25 @@
         <p class="home-reasons-cta">
           <a href="contact.html" class="btn btn-reasons-outline">BOOK NOW</a>
         </p>
+      </div>
+    </section>
+
+    <!-- 5. Restaurant teaser: DELICIOUS TRADITION / OUR RESTAURANT / READ MORE -->
+    <section class="section home-restaurant-teaser">
+      <div class="container home-restaurant-teaser-inner">
+        <h2 class="home-restaurant-title">DELICIOUS TRADITION</h2>
+        <p class="home-restaurant-label">OUR RESTAURANT</p>
+        <p class="home-restaurant-desc">Overlooking the calm blue waters of the Aegean sea, Molos restaurant serves delicious Greek food by keeping faithful to the traditional recipes &amp; most importantly the use of fresh ingredients. The simplicity &amp; freshness of the Greek cuisine promises to be a gastronomy experience that you&rsquo;ll never forget.</p>
+        <a href="restaurant.html" class="btn btn-primary">READ MORE</a>
+      </div>
+    </section>
+
+    <!-- 5b. Text + BOOK NOW block (no image) -->
+    <section class="section home-photo-cta-section">
+      <div class="container home-photo-cta">
+        <h2 class="home-photo-title">Relax and enjoy<br />your holiday</h2>
+        <p class="home-photo-subtitle">AMAZING HOTEL IN THASSOS</p>
+        <a href="contact.html" class="btn btn-primary">BOOK NOW</a>
       </div>
     </section>
 

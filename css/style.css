@@ -60,12 +60,40 @@ img { max-width: 100%; height: auto; display: block; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: #f5f4f2;
+  background: var(--color-white);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: var(--shadow-sm);
   transition: box-shadow 0.3s ease;
 }
 .site-header.scrolled { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); }
+
+.header-top-bar {
+  background: var(--color-dark);
+  padding: 8px 0;
+}
+.header-top-bar .container {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+.header-phone::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2'%3E%3Cpath d='M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.19-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z'/%3E%3C/svg%3E") center/contain no-repeat;
+}
+.header-phone:hover { color: rgba(255,255,255,0.9); }
 
 .header-inner {
   display: flex;
@@ -74,6 +102,7 @@ img { max-width: 100%; height: auto; display: block; }
   min-height: var(--header-height);
   padding-top: 10px;
   padding-bottom: 10px;
+  background: var(--color-white);
 }
 
 .logo img { max-height: 70px; width: auto; }
@@ -118,20 +147,24 @@ img { max-width: 100%; height: auto; display: block; }
   position: relative;
 }
 .nav-menu li + li::before {
-  content: '';
+  content: '|';
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 1px;
-  height: 14px;
-  background: rgba(0, 0, 0, 0.2);
+  color: #878787;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 400;
+  pointer-events: none;
 }
 .nav-menu a {
-  color: var(--color-text);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 1.2px;
+  font-family: var(--font-heading);
+  color: #878787;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   padding: 0 14px;
 }
@@ -139,10 +172,14 @@ img { max-width: 100%; height: auto; display: block; }
 .nav-cta::before { display: none; }
 .nav-cta { margin-left: 8px; }
 .nav-cta a {
+  font-family: var(--font-body);
   background: var(--color-primary);
   color: var(--color-white);
   padding: 10px 22px;
   border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
   box-shadow: 0 2px 8px rgba(64, 79, 64, 0.25);
 }
 .nav-cta a:hover { opacity: 0.95; }
@@ -327,7 +364,7 @@ img { max-width: 100%; height: auto; display: block; }
 .hero-slider {
   position: relative;
   overflow: hidden;
-  height: 480px;
+  height: 780px;
 }
 .hero-slider-track {
   position: relative;
@@ -403,37 +440,50 @@ img { max-width: 100%; height: auto; display: block; }
 
 .home-intro {
   background: var(--color-white);
-  padding: 80px 0;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  padding: 70px 0;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
 }
 .home-intro-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: start;
+  grid-template-columns: 748px 1fr;
+  gap: 120px;
+  align-items: center;
+  width: 100%;
 }
 .home-intro-label {
   margin: 0 0 6px;
+  font-family: var(--font-body);
   font-size: 12px;
+  font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--color-text-muted);
-  font-weight: 500;
+  color: #a3a3a3;
 }
 .home-intro-title {
   margin: 0 0 16px;
   font-family: var(--font-heading);
-  font-size: 36px;
+  font-size: 45px;
+  line-height: 40px;
   font-weight: 700;
-  color: var(--color-dark);
+  color: rgb(76, 72, 70);
   letter-spacing: 0.02em;
 }
 .home-intro-desc {
   margin: 0;
-  color: var(--color-text);
+  font-family: var(--font-body);
   font-size: 16px;
-  line-height: 1.65;
-  max-width: 52ch;
+  line-height: 27px;
+  font-weight: 100;
+  color: #4a4a4a;
+  max-width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .home-intro-features { display: flex; flex-direction: column; gap: 24px; }
 .home-feature {
@@ -458,17 +508,20 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .home-feature-title {
   margin: 0 0 4px;
-  font-family: var(--font-heading);
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--color-dark);
-  letter-spacing: 0.05em;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgb(76, 72, 70);
 }
 .home-feature-desc {
   margin: 0;
+  font-family: var(--font-body);
   font-size: 14px;
-  color: var(--color-text-muted);
+  font-weight: 100;
   line-height: 1.5;
+  color: #4a4a4a;
 }
 
 .home-rooms { padding: 0; }
@@ -618,7 +671,7 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 80px 20px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
 }
-.home-restaurant-teaser-inner { max-width: 640px; margin: 0 auto; }
+.home-restaurant-teaser-inner { max-width: 1200px; margin: 0 auto; }
 .home-restaurant-title {
   margin: 0 0 12px;
   font-family: var(--font-heading);
@@ -632,7 +685,7 @@ img { max-width: 100%; height: auto; display: block; }
   font-size: 13px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--color-text-muted);
+  color: var(--color-text);
   position: relative;
 }
 .home-restaurant-label::before,
@@ -648,19 +701,54 @@ img { max-width: 100%; height: auto; display: block; }
 .home-restaurant-label::after { right: 0; }
 .home-restaurant-desc {
   margin: 0 0 28px;
-  font-size: 15px;
+  font-size: 24px;
   line-height: 1.7;
   color: var(--color-text);
 }
 
+/* Text + BOOK NOW block (after restaurant) */
+.home-photo-cta-section { background: var(--color-white); }
+.home-photo-cta {
+  text-align: center;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.home-photo-title {
+  margin: 0 0 16px;
+  font-family: 'Cardo', var(--font-heading), serif;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-dark);
+  letter-spacing: 0.02em;
+}
+.home-photo-subtitle {
+  margin: 0 0 28px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+.home-photo-cta .btn { margin-top: 0; }
+
 .home-reasons {
   background: #2c4632;
-  padding: 80px 20px;
+  padding: 100px 20px;
   text-align: center;
+  width: 100%;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
 }
 .home-reasons-title {
-  margin: 0 0 48px;
-  font-family: var(--font-heading);
+  margin: 0 0 24px;
+  padding: 0 0 120px;
+  font-family: 'Cardo', var(--font-heading), serif;
   font-size: 28px;
   font-weight: 700;
   color: #fff;
@@ -670,13 +758,14 @@ img { max-width: 100%; height: auto; display: block; }
 .home-reasons-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  margin-bottom: 48px;
+  gap: 32px;
+  margin-bottom: 24px;
   text-align: center;
 }
 .home-reason-title {
-  margin: 0 0 12px;
-  font-size: 14px;
+  margin: 0 0 8px;
+  font-family: 'Cardo', var(--font-heading), serif;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -684,7 +773,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .home-reason-desc {
   margin: 0;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.85);
 }
@@ -708,7 +797,7 @@ img { max-width: 100%; height: auto; display: block; }
 .home-thassos-title { text-transform: uppercase; letter-spacing: 0.02em; }
 
 @media (max-width: 1024px) {
-  .home-intro-grid { grid-template-columns: 1fr; }
+  .home-intro-grid { grid-template-columns: 1fr; gap: 60px; }
   .home-reasons-grid { grid-template-columns: 1fr; }
   .home-room-slide { flex: 0 0 calc(50% - 12px); min-width: 260px; }
   .home-rooms-carousel { padding-left: 40px; padding-right: 40px; }
