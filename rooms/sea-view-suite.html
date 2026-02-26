@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sea View Suite – Lafeyra Hotel Thassos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Premium suite with partial sea view and private balcony." />
+  <link rel="icon" href="../favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/room.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo.png" alt="LaFeyra Luxury rooms" width="150" height="auto" />
+      </a>
+      <nav class="nav-wrap" aria-label="Main navigation">
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="menu-main" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="menu-main" class="nav-menu">
+          <li><a href="../index.html">HOME</a></li>
+          <li class="nav-item-has-dropdown">
+            <a href="../rooms.html" aria-haspopup="true" aria-expanded="false">STAY</a>
+            <ul class="nav-dropdown">
+              <li><a href="../rooms.html">OVERVIEW</a></li>
+              <li><a href="double-room-sea-view.html">DOUBLE ROOM SEA VIEW</a></li>
+              <li><a href="double-room-pool-view.html">DOUBLE ROOM POOL VIEW</a></li>
+              <li><a href="double-room-mountain-view.html">DOUBLE ROOM MOUNTAIN VIEW</a></li>
+              <li><a href="triple-room-sea-view.html">TRIPLE ROOM SEA VIEW</a></li>
+              <li><a href="triple-room-pool-view.html">TRIPLE ROOM POOL VIEW</a></li>
+              <li><a href="quadruple-studio-upper-floor.html">QUADRUPLE STUDIO (UPPER FLOOR)</a></li>
+              <li><a href="quadruple-studio-ground-floor.html">QUADRUPLE STUDIO GROUND FLOOR</a></li>
+              <li><a href="deluxe-triple-suite.html">DELUXE TRIPLE SUITE</a></li>
+            </ul>
+          </li>
+          <li class="nav-item-has-dropdown">
+            <a href="../info/location.html" aria-haspopup="true" aria-expanded="false">INFO</a>
+            <ul class="nav-dropdown">
+              <li><a href="../info/location.html">LOCATION</a></li>
+              <li><a href="../info/experiences.html">EXPERIENCES</a></li>
+              <li><a href="../info/getting-here.html">GETTING HERE</a></li>
+            </ul>
+          </li>
+          <li><a href="../gallery.html">GALLERY</a></li>
+          <li><a href="../restaurant.html">RESTAURANT</a></li>
+          <li><a href="../contact.html">CONTACT</a></li>
+          <li class="nav-cta"><a href="../contact.html">BOOK NOW</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="room-hero" aria-label="Room">
+      <div class="room-hero-bg" style="background-image: url('https://placehold.co/1920x878/6b8a9e/ffffff?text=Sea+View+Suite');"></div>
+      <div class="hero-overlay">
+        <div class="container">
+          <span class="room-badge">Suite</span>
+          <h1 class="hero-title">Sea View Suite</h1>
+          <p class="hero-text">
+            Premium suite with partial sea view and private balcony. Spacious layout and elegant details for an unforgettable stay in Thassos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section room-content">
+      <div class="container room-layout">
+        <div class="room-main">
+          <h2 class="section-title">Room Overview</h2>
+          <p class="section-desc">
+            The Sea View Suite combines comfort and style with a generous interior and a private balcony where you can enjoy Thassos sunsets. Ideal for couples or small families looking for extra space and a touch of luxury.
+          </p>
+          <p class="section-desc">
+            The suite includes a modern bathroom, air conditioning, flat-screen TV, Wi‑Fi and daily housekeeping.
+          </p>
+        </div>
+        <aside class="room-sidebar">
+          <h3 class="room-subtitle">Key Features</h3>
+          <ul class="check-list">
+            <li>Partial sea view</li>
+            <li>Private balcony</li>
+            <li>Spacious layout</li>
+            <li>Modern bathroom</li>
+            <li>A/C, TV &amp; Wi‑Fi</li>
+            <li>Daily housekeeping</li>
+          </ul>
+          <h3 class="room-subtitle">Guests</h3>
+          <p class="section-desc">Up to 4 guests.</p>
+          <a href="../contact.html" class="btn btn-primary">Request Offer</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="../index.html" class="footer-logo" aria-label="LaFeyra Luxury rooms – Home">
+        <img src="../images/logo.png" alt="" width="140" height="auto" />
+      </a>
+      <p class="footer-text">Lafeyra Hotel Thassos – Sea View Suite &copy; <span id="footer-year"></span></p>
+    </div>
+  </footer>
+  <script src="../data/rooms.js"></script>
+  <script src="../js/rooms-render.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

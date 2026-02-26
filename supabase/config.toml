@@ -1,0 +1,4 @@
+# Supabase project config (used by CLI for deploy)
+# verify_jwt = false: το browser στέλνει OPTIONS χωρίς Authorization, αλλιώς 401 και CORS block
+[functions.send-reservation]
+verify_jwt = false
