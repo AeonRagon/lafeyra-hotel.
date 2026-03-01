@@ -42,13 +42,14 @@
       var r = ROOMS[c];
       var art = document.createElement('article');
       art.className = 'home-room-slide';
+      var guestsKey = 'room.guests_' + (r.guests || '2');
       art.innerHTML =
         '<a href="' + roomHrefPrefix + r.slug + '.html" class="home-room-slide-img-wrap">' +
           '<img src="' + (r.image || r.imageLarge) + '" alt="' + escapeHtml(r.title) + '" width="400" height="280" />' +
         '</a>' +
-        '<div class="home-room-slide-bar"><span>' + r.guests + ' GUESTS</span><span>' + r.area + '</span></div>' +
+        '<div class="home-room-slide-bar"><span data-i18n="' + guestsKey + '">' + r.guests + ' GUESTS</span><span>' + r.area + '</span></div>' +
         '<h3 class="home-room-slide-title">' + escapeHtml(r.title) + '</h3>' +
-        '<a href="' + roomHrefPrefix + r.slug + '.html" class="home-room-slide-link">READ MORE</a>';
+        '<a href="' + roomHrefPrefix + r.slug + '.html" class="home-room-slide-link" data-i18n="common.read_more">READ MORE</a>';
       track.appendChild(art);
     }
   }
@@ -61,17 +62,19 @@
       var rm = ROOMS[g];
       var card = document.createElement('article');
       card.className = 'room-card stay-card';
+      var guestsKey = 'room.guests_' + (rm.guests || '2');
+      var descKey = 'room.grid_desc_' + rm.slug.replace(/-/g, '_');
       card.innerHTML =
         '<a href="' + roomHrefPrefix + rm.slug + '.html" class="room-card-img-wrap">' +
           '<img src="' + (rm.imageLarge || rm.image) + '" alt="' + escapeHtml(rm.title) + '" width="720" height="480" />' +
         '</a>' +
         '<div class="stay-card-bar">' +
-          '<span class="stay-meta"><span class="stay-meta-icon" aria-hidden="true">&#9670;</span> ' + rm.guests + ' GUESTS</span>' +
+          '<span class="stay-meta"><span class="stay-meta-icon" aria-hidden="true">&#9670;</span> <span data-i18n="' + guestsKey + '">' + rm.guests + ' GUESTS</span></span>' +
           '<span class="stay-meta"><span class="stay-meta-icon" aria-hidden="true">&#9632;</span> ' + rm.area + '</span>' +
         '</div>' +
         '<div class="room-card-body">' +
-          '<p class="stay-card-desc">' + escapeHtml(rm.description) + '</p>' +
-          '<a href="' + roomHrefPrefix + rm.slug + '.html" class="btn btn-stay-read">READ MORE</a>' +
+          '<p class="stay-card-desc" data-i18n="' + descKey + '">' + escapeHtml(rm.description) + '</p>' +
+          '<a href="' + roomHrefPrefix + rm.slug + '.html" class="btn btn-stay-read" data-i18n="common.read_more">READ MORE</a>' +
         '</div>';
       grid.appendChild(card);
     }

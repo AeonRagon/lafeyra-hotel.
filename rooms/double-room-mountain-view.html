@@ -29,34 +29,39 @@
           <span></span><span></span><span></span>
         </button>
         <ul id="menu-main" class="nav-menu">
-          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../index.html" data-i18n="nav.home">HOME</a></li>
           <li class="nav-item-has-dropdown">
-            <a href="../rooms.html" aria-haspopup="true" aria-expanded="false">STAY</a>
+            <a href="../rooms.html" aria-haspopup="true" aria-expanded="false" data-i18n="nav.stay">STAY</a>
             <ul class="nav-dropdown">
-              <li><a href="../rooms.html">OVERVIEW</a></li>
-              <li><a href="double-room-sea-view.html">DOUBLE ROOM SEA VIEW</a></li>
-              <li><a href="double-room-pool-view.html">DOUBLE ROOM POOL VIEW</a></li>
-              <li><a href="double-room-mountain-view.html">DOUBLE ROOM MOUNTAIN VIEW</a></li>
-              <li><a href="triple-room-sea-view.html">TRIPLE ROOM SEA VIEW</a></li>
-              <li><a href="triple-room-pool-view.html">TRIPLE ROOM POOL VIEW</a></li>
-              <li><a href="quadruple-studio-upper-floor.html">QUADRUPLE STUDIO (UPPER FLOOR)</a></li>
-              <li><a href="quadruple-studio-ground-floor.html">QUADRUPLE STUDIO GROUND FLOOR</a></li>
-              <li><a href="deluxe-triple-suite.html">DELUXE TRIPLE SUITE</a></li>
+              <li><a href="../rooms.html" data-i18n="nav.overview">OVERVIEW</a></li>
+              <li><a href="double-room-sea-view.html" data-i18n="nav.double_sea">DOUBLE ROOM SEA VIEW</a></li>
+              <li><a href="double-room-pool-view.html" data-i18n="nav.double_pool">DOUBLE ROOM POOL VIEW</a></li>
+              <li><a href="double-room-mountain-view.html" data-i18n="nav.double_mountain">DOUBLE ROOM MOUNTAIN VIEW</a></li>
+              <li><a href="triple-room-sea-view.html" data-i18n="nav.triple_sea">TRIPLE ROOM SEA VIEW</a></li>
+              <li><a href="triple-room-pool-view.html" data-i18n="nav.triple_pool">TRIPLE ROOM POOL VIEW</a></li>
+              <li><a href="quadruple-studio-upper-floor.html" data-i18n="nav.quad_upper">QUADRUPLE STUDIO (UPPER FLOOR)</a></li>
+              <li><a href="quadruple-studio-ground-floor.html" data-i18n="nav.quad_ground">QUADRUPLE STUDIO GROUND FLOOR</a></li>
+              <li><a href="deluxe-triple-suite.html" data-i18n="nav.deluxe_suite">DELUXE TRIPLE SUITE</a></li>
             </ul>
           </li>
           <li class="nav-item-has-dropdown">
-            <a href="../info/location.html" aria-haspopup="true" aria-expanded="false">INFO</a>
+            <a href="../info/location.html" aria-haspopup="true" aria-expanded="false" data-i18n="nav.info">INFO</a>
             <ul class="nav-dropdown">
-              <li><a href="../info/location.html">LOCATION</a></li>
-              <li><a href="../info/experiences.html">EXPERIENCES</a></li>
-              <li><a href="../info/getting-here.html">GETTING HERE</a></li>
+              <li><a href="../info/location.html" data-i18n="nav.location">LOCATION</a></li>
+              <li><a href="../info/experiences.html" data-i18n="nav.experiences">EXPERIENCES</a></li>
+              <li><a href="../info/getting-here.html" data-i18n="nav.getting_here">GETTING HERE</a></li>
             </ul>
           </li>
-          <li><a href="../gallery.html">GALLERY</a></li>
-          <li><a href="../restaurant.html">RESTAURANT</a></li>
-          <li><a href="../contact.html">CONTACT</a></li>
-          <li class="nav-cta"><a href="../contact.html">BOOK NOW</a></li>
+          <li><a href="../gallery.html" data-i18n="nav.gallery">GALLERY</a></li>
+          <li><a href="../restaurant.html" data-i18n="nav.restaurant">RESTAURANT</a></li>
+          <li><a href="../contact.html" data-i18n="nav.contact">CONTACT</a></li>
+          <li class="nav-cta"><a href="../contact.html" data-i18n="nav.book_now">BOOK NOW</a></li>
         </ul>
+        <div class="lang-switcher" role="navigation" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+          <span class="lang-sep">|</span>
+          <button type="button" class="lang-btn" data-lang="el" aria-pressed="false">ΕΛ</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -66,9 +71,9 @@
       <div class="room-hero-bg" style="background-image: url('https://placehold.co/1536x1024/5a6b5a/ffffff?text=Double+Room+Mountain+View');"></div>
       <div class="hero-overlay">
         <div class="container">
-          <span class="room-badge">Double Room</span>
-          <h1 class="hero-title">Double Room – Mountain View</h1>
-          <p class="hero-text">
+          <span class="room-badge" data-i18n="room.badge_double">Double Room</span>
+          <h1 class="hero-title" data-i18n="room.double_mountain_title">Double Room – Mountain View</h1>
+          <p class="hero-text" data-i18n="room.double_mountain_hero">
             Stylish double room for two, with double bed, mini-fridge and furnished balcony with mountain view.
           </p>
         </div>
@@ -78,30 +83,30 @@
     <section class="section room-content">
       <div class="container room-layout">
         <div class="room-main">
-          <h2 class="section-title">Room Overview</h2>
-          <p class="section-desc">
+          <h2 class="section-title" data-i18n="room.overview">Room Overview</h2>
+          <p class="section-desc" data-i18n="room.double_mountain_desc">
             The double room has stylish decoration and is ideal for couples since it can accommodate up to two people. The room features a double bed, mini-fridge, a modern bathroom with a shower, and all the necessary amenities that will make you feel right at home. Lastly, the room has direct access to a furnished balcony with mountain view.
           </p>
-          <h3 class="room-subtitle">Gallery</h3>
+          <h3 class="room-subtitle" data-i18n="room.gallery">Gallery</h3>
           <div class="room-gallery">
             <img src="https://placehold.co/1110x570/c4d4c4/4a554a?text=Interior+1" alt="Double room mountain view – interior" />
             <img src="https://placehold.co/1110x570/c4d4c4/4a554a?text=Interior+2" alt="Double room mountain view – details" />
           </div>
           <div class="room-amenities-section">
-            <h3 class="room-subtitle">Amenities</h3>
+            <h3 class="room-subtitle" data-i18n="room.amenities">Amenities</h3>
             <ul class="room-amenities check-list">
-              <li>Air-conditioning</li>
-              <li>32-inch Flatscreen TV</li>
-              <li>Hairdryer</li>
-              <li>Travel iron</li>
-              <li>Coffee maker</li>
-              <li>Free high-speed Wi-Fi</li>
-              <li>Refrigerator</li>
-              <li>Safe</li>
-              <li>En-suite bathroom</li>
-              <li>Free access to our pool</li>
-              <li>Electric water kettle</li>
-              <li>Comfortable double bed</li>
+              <li data-i18n="amenity.air_conditioning">Air-conditioning</li>
+              <li data-i18n="amenity.tv">32-inch Flatscreen TV</li>
+              <li data-i18n="amenity.hairdryer">Hairdryer</li>
+              <li data-i18n="amenity.travel_iron">Travel iron</li>
+              <li data-i18n="amenity.coffee_maker">Coffee maker</li>
+              <li data-i18n="amenity.wifi">Free high-speed Wi-Fi</li>
+              <li data-i18n="amenity.refrigerator">Refrigerator</li>
+              <li data-i18n="amenity.safe">Safe</li>
+              <li data-i18n="amenity.ensuite_bathroom">En-suite bathroom</li>
+              <li data-i18n="amenity.pool_access">Free access to our pool</li>
+              <li data-i18n="amenity.kettle">Electric water kettle</li>
+              <li data-i18n="amenity.double_bed">Comfortable double bed</li>
             </ul>
           </div>
         </div>
@@ -109,24 +114,24 @@
           <div class="room-info-boxes-wrap">
             <div class="room-info-box">
               <span class="room-info-box-icon" aria-hidden="true">&#9670;</span>
-              <span class="room-info-box-title">2 GUESTS</span>
+              <span class="room-info-box-title" data-i18n="room.guests_2">2 GUESTS</span>
             </div>
             <div class="room-info-box">
               <span class="room-info-box-icon" aria-hidden="true">&#9632;</span>
-              <span class="room-info-box-title">18–22 m²</span>
+              <span class="room-info-box-title" data-i18n="room.size_18_22">18–22 m²</span>
             </div>
             <div class="room-info-box">
               <span class="room-info-box-icon" aria-hidden="true">&#9730;</span>
-              <span class="room-info-box-title">MOUNTAIN VIEW</span>
+              <span class="room-info-box-title" data-i18n="room.view_mountain">MOUNTAIN VIEW</span>
             </div>
             <div class="room-info-box">
               <span class="room-info-box-icon" aria-hidden="true">&#9830;</span>
-              <span class="room-info-box-title">1 DOUBLE BED</span>
+              <span class="room-info-box-title" data-i18n="room.bed_1_double">1 DOUBLE BED</span>
             </div>
           </div>
           <div class="room-book-direct">
-            <p class="room-book-direct-text">Book directly with our hotel to receive the best available rates &amp; offers.</p>
-            <a href="../contact.html" class="btn btn-primary">BOOK NOW</a>
+            <p class="room-book-direct-text" data-i18n="room.book_direct">Book directly with us for the best rates and special offers.</p>
+            <a href="../contact.html" class="btn btn-primary" data-i18n="common.book_now">BOOK NOW</a>
           </div>
         </aside>
       </div>
@@ -141,6 +146,7 @@
       <p class="footer-text">Lafeyra Hotel Thassos – Double Room Mountain View &copy; <span id="footer-year"></span></p>
     </div>
   </footer>
+  <script src="../js/i18n.js"></script>
   <script src="../data/rooms.js"></script>
   <script src="../js/rooms-render.js"></script>
   <script src="../js/main.js"></script>

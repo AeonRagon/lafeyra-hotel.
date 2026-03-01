@@ -29,34 +29,39 @@
           <span></span><span></span><span></span>
         </button>
         <ul id="menu-main" class="nav-menu">
-          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../index.html" data-i18n="nav.home">HOME</a></li>
           <li class="nav-item-has-dropdown">
-            <a href="../rooms.html" aria-haspopup="true" aria-expanded="false">STAY</a>
+            <a href="../rooms.html" aria-haspopup="true" aria-expanded="false" data-i18n="nav.stay">STAY</a>
             <ul class="nav-dropdown">
-              <li><a href="../rooms.html">OVERVIEW</a></li>
-              <li><a href="double-room-sea-view.html">DOUBLE ROOM SEA VIEW</a></li>
-              <li><a href="double-room-pool-view.html">DOUBLE ROOM POOL VIEW</a></li>
-              <li><a href="double-room-mountain-view.html">DOUBLE ROOM MOUNTAIN VIEW</a></li>
-              <li><a href="triple-room-sea-view.html">TRIPLE ROOM SEA VIEW</a></li>
-              <li><a href="triple-room-pool-view.html">TRIPLE ROOM POOL VIEW</a></li>
-              <li><a href="quadruple-studio-upper-floor.html">QUADRUPLE STUDIO (UPPER FLOOR)</a></li>
-              <li><a href="quadruple-studio-ground-floor.html">QUADRUPLE STUDIO GROUND FLOOR</a></li>
-              <li><a href="deluxe-triple-suite.html">DELUXE TRIPLE SUITE</a></li>
+              <li><a href="../rooms.html" data-i18n="nav.overview">OVERVIEW</a></li>
+              <li><a href="double-room-sea-view.html" data-i18n="nav.double_sea">DOUBLE ROOM SEA VIEW</a></li>
+              <li><a href="double-room-pool-view.html" data-i18n="nav.double_pool">DOUBLE ROOM POOL VIEW</a></li>
+              <li><a href="double-room-mountain-view.html" data-i18n="nav.double_mountain">DOUBLE ROOM MOUNTAIN VIEW</a></li>
+              <li><a href="triple-room-sea-view.html" data-i18n="nav.triple_sea">TRIPLE ROOM SEA VIEW</a></li>
+              <li><a href="triple-room-pool-view.html" data-i18n="nav.triple_pool">TRIPLE ROOM POOL VIEW</a></li>
+              <li><a href="quadruple-studio-upper-floor.html" data-i18n="nav.quad_upper">QUADRUPLE STUDIO (UPPER FLOOR)</a></li>
+              <li><a href="quadruple-studio-ground-floor.html" data-i18n="nav.quad_ground">QUADRUPLE STUDIO GROUND FLOOR</a></li>
+              <li><a href="deluxe-triple-suite.html" data-i18n="nav.deluxe_suite">DELUXE TRIPLE SUITE</a></li>
             </ul>
           </li>
           <li class="nav-item-has-dropdown">
-            <a href="../info/location.html" aria-haspopup="true" aria-expanded="false">INFO</a>
+            <a href="../info/location.html" aria-haspopup="true" aria-expanded="false" data-i18n="nav.info">INFO</a>
             <ul class="nav-dropdown">
-              <li><a href="../info/location.html">LOCATION</a></li>
-              <li><a href="../info/experiences.html">EXPERIENCES</a></li>
-              <li><a href="../info/getting-here.html">GETTING HERE</a></li>
+              <li><a href="../info/location.html" data-i18n="nav.location">LOCATION</a></li>
+              <li><a href="../info/experiences.html" data-i18n="nav.experiences">EXPERIENCES</a></li>
+              <li><a href="../info/getting-here.html" data-i18n="nav.getting_here">GETTING HERE</a></li>
             </ul>
           </li>
-          <li><a href="../gallery.html">GALLERY</a></li>
-          <li><a href="../restaurant.html">RESTAURANT</a></li>
-          <li><a href="../contact.html">CONTACT</a></li>
-          <li class="nav-cta"><a href="../contact.html">BOOK NOW</a></li>
+          <li><a href="../gallery.html" data-i18n="nav.gallery">GALLERY</a></li>
+          <li><a href="../restaurant.html" data-i18n="nav.restaurant">RESTAURANT</a></li>
+          <li><a href="../contact.html" data-i18n="nav.contact">CONTACT</a></li>
+          <li class="nav-cta"><a href="../contact.html" data-i18n="nav.book_now">BOOK NOW</a></li>
         </ul>
+        <div class="lang-switcher" role="navigation" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+          <span class="lang-sep">|</span>
+          <button type="button" class="lang-btn" data-lang="el" aria-pressed="false">ΕΛ</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -78,7 +83,7 @@
     <section class="section room-content">
       <div class="container room-layout">
         <div class="room-main">
-          <h2 class="section-title">Room Overview</h2>
+          <h2 class="section-title" data-i18n="room.overview">Room Overview</h2>
           <p class="section-desc">
             The Sea View Suite combines comfort and style with a generous interior and a private balcony where you can enjoy Thassos sunsets. Ideal for couples or small families looking for extra space and a touch of luxury.
           </p>
@@ -112,6 +117,7 @@
       <p class="footer-text">Lafeyra Hotel Thassos – Sea View Suite &copy; <span id="footer-year"></span></p>
     </div>
   </footer>
+  <script src="../js/i18n.js"></script>
   <script src="../data/rooms.js"></script>
   <script src="../js/rooms-render.js"></script>
   <script src="../js/main.js"></script>

@@ -30,34 +30,39 @@
           <span></span><span></span><span></span>
         </button>
         <ul id="menu-main" class="nav-menu">
-          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html" data-i18n="nav.home">HOME</a></li>
           <li class="nav-item-has-dropdown">
-            <a href="rooms.html">STAY</a>
+            <a href="rooms.html" data-i18n="nav.stay">STAY</a>
             <ul class="nav-dropdown">
-              <li><a href="rooms.html">OVERVIEW</a></li>
-              <li><a href="rooms/double-room-sea-view.html">DOUBLE ROOM SEA VIEW</a></li>
-              <li><a href="rooms/double-room-pool-view.html">DOUBLE ROOM POOL VIEW</a></li>
-              <li><a href="rooms/double-room-mountain-view.html">DOUBLE ROOM MOUNTAIN VIEW</a></li>
-              <li><a href="rooms/triple-room-sea-view.html">TRIPLE ROOM SEA VIEW</a></li>
-              <li><a href="rooms/triple-room-pool-view.html">TRIPLE ROOM POOL VIEW</a></li>
-              <li><a href="rooms/quadruple-studio-upper-floor.html">QUADRUPLE STUDIO (UPPER FLOOR)</a></li>
-              <li><a href="rooms/quadruple-studio-ground-floor.html">QUADRUPLE STUDIO GROUND FLOOR</a></li>
-              <li><a href="rooms/deluxe-triple-suite.html">DELUXE TRIPLE SUITE</a></li>
+              <li><a href="rooms.html" data-i18n="nav.overview">OVERVIEW</a></li>
+              <li><a href="rooms/double-room-sea-view.html" data-i18n="nav.double_sea">DOUBLE ROOM SEA VIEW</a></li>
+              <li><a href="rooms/double-room-pool-view.html" data-i18n="nav.double_pool">DOUBLE ROOM POOL VIEW</a></li>
+              <li><a href="rooms/double-room-mountain-view.html" data-i18n="nav.double_mountain">DOUBLE ROOM MOUNTAIN VIEW</a></li>
+              <li><a href="rooms/triple-room-sea-view.html" data-i18n="nav.triple_sea">TRIPLE ROOM SEA VIEW</a></li>
+              <li><a href="rooms/triple-room-pool-view.html" data-i18n="nav.triple_pool">TRIPLE ROOM POOL VIEW</a></li>
+              <li><a href="rooms/quadruple-studio-upper-floor.html" data-i18n="nav.quad_upper">QUADRUPLE STUDIO (UPPER FLOOR)</a></li>
+              <li><a href="rooms/quadruple-studio-ground-floor.html" data-i18n="nav.quad_ground">QUADRUPLE STUDIO GROUND FLOOR</a></li>
+              <li><a href="rooms/deluxe-triple-suite.html" data-i18n="nav.deluxe_suite">DELUXE TRIPLE SUITE</a></li>
             </ul>
           </li>
           <li class="nav-item-has-dropdown">
-            <a href="info/location.html" aria-haspopup="true" aria-expanded="false">INFO</a>
+            <a href="info/location.html" aria-haspopup="true" aria-expanded="false" data-i18n="nav.info">INFO</a>
             <ul class="nav-dropdown">
-              <li><a href="info/location.html">LOCATION</a></li>
-              <li><a href="info/experiences.html">EXPERIENCES</a></li>
-              <li><a href="info/getting-here.html">GETTING HERE</a></li>
+              <li><a href="info/location.html" data-i18n="nav.location">LOCATION</a></li>
+              <li><a href="info/experiences.html" data-i18n="nav.experiences">EXPERIENCES</a></li>
+              <li><a href="info/getting-here.html" data-i18n="nav.getting_here">GETTING HERE</a></li>
             </ul>
           </li>
-          <li><a href="gallery.html">GALLERY</a></li>
-          <li><a href="restaurant.html">RESTAURANT</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li class="nav-cta"><a href="contact.html">BOOK NOW</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">GALLERY</a></li>
+          <li><a href="restaurant.html" data-i18n="nav.restaurant">RESTAURANT</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">CONTACT</a></li>
+          <li class="nav-cta"><a href="contact.html" data-i18n="nav.book_now">BOOK NOW</a></li>
         </ul>
+        <div class="lang-switcher" role="navigation" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+          <span class="lang-sep">|</span>
+          <button type="button" class="lang-btn" data-lang="el" aria-pressed="false">ΕΛ</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -66,59 +71,59 @@
     <section class="section section-booking">
       <div class="container">
         <header class="section-header reveal">
-          <p class="section-label">Contact Us</p>
-          <h1 class="section-title">Reservations</h1>
+          <p class="section-label" data-i18n="contact.label">Contact Us</p>
+          <h1 class="section-title" data-i18n="contact.title">Reservations</h1>
         </header>
         <div class="contact-page-grid">
           <div class="booking-form-wrap">
-            <h2 class="section-title" style="font-size: 1.35rem;">Send us your reservation request</h2>
-            <p class="section-desc">
+            <h2 class="section-title" style="font-size: 1.35rem;" data-i18n="contact.send_title">Send us your reservation request</h2>
+            <p class="section-desc" data-i18n="contact.send_desc">
               Please use the form provided below in order to send us a reservation request. You will receive a reply shortly after we examine your request.
             </p>
-            <p class="form-required-note">Fields marked with an <span class="required">*</span> are required.</p>
+            <p class="form-required-note" data-i18n="contact.required_note">Fields marked with an <span class="required">*</span> are required.</p>
             <form id="reservation-form" class="booking-form" novalidate>
               <div class="form-row form-row-2">
                 <div class="form-group">
-                  <label for="firstname">First Name <span class="required">*</span></label>
-                  <input id="firstname" name="firstname" type="text" required placeholder="First name" />
+                  <label for="firstname"><span data-i18n="contact.first_name">First Name</span> <span class="required">*</span></label>
+                  <input id="firstname" name="firstname" type="text" required data-i18n-placeholder="contact.placeholder_first" placeholder="First name" />
                 </div>
                 <div class="form-group">
-                  <label for="lastname">Last Name <span class="required">*</span></label>
-                  <input id="lastname" name="lastname" type="text" required placeholder="Last name" />
+                  <label for="lastname"><span data-i18n="contact.last_name">Last Name</span> <span class="required">*</span></label>
+                  <input id="lastname" name="lastname" type="text" required data-i18n-placeholder="contact.placeholder_last" placeholder="Last name" />
                 </div>
               </div>
               <div class="form-group">
-                <label for="email">Email <span class="required">*</span></label>
-                <input id="email" name="email" type="email" required placeholder="your@email.com" />
+                <label for="email"><span data-i18n="contact.email">Email</span> <span class="required">*</span></label>
+                <input id="email" name="email" type="email" required data-i18n-placeholder="contact.placeholder_email" placeholder="your@email.com" />
               </div>
               <div class="form-group">
-                <label for="phone">Phone <span class="required">*</span></label>
-                <input id="phone" name="phone" type="tel" required placeholder="+30 " />
+                <label for="phone"><span data-i18n="contact.phone">Phone</span> <span class="required">*</span></label>
+                <input id="phone" name="phone" type="tel" required data-i18n-placeholder="contact.placeholder_phone" placeholder="+30 " />
               </div>
               <div class="form-row form-row-2">
                 <div class="form-group">
-                  <label for="arrival">Arrival <span class="required">*</span></label>
+                  <label for="arrival"><span data-i18n="contact.arrival">Arrival</span> <span class="required">*</span></label>
                   <input id="arrival" name="arrival" type="date" required />
                 </div>
                 <div class="form-group">
-                  <label for="departure">Departure <span class="required">*</span></label>
+                  <label for="departure"><span data-i18n="contact.departure">Departure</span> <span class="required">*</span></label>
                   <input id="departure" name="departure" type="date" required />
                 </div>
               </div>
               <div class="form-row form-row-2">
                 <div class="form-group">
-                  <label for="adults">Adults <span class="required">*</span></label>
+                  <label for="adults"><span data-i18n="contact.adults">Adults</span> <span class="required">*</span></label>
                   <input id="adults" name="adults" type="number" min="1" max="20" value="1" required />
                 </div>
                 <div class="form-group">
-                  <label for="children">Children</label>
+                  <label for="children" data-i18n="contact.children">Children</label>
                   <input id="children" name="children" type="number" min="0" max="20" value="0" />
                 </div>
               </div>
               <div class="form-group">
-                <label for="accommodation">Choose accommodation <span class="required">*</span></label>
+                <label for="accommodation"><span data-i18n="contact.accommodation">Choose accommodation</span> <span class="required">*</span></label>
                 <select id="accommodation" name="accommodation" required>
-                  <option value="">— Select —</option>
+                  <option value="" data-i18n="contact.select">— Select —</option>
                   <option value="Double Room Sea View">Double Room Sea View</option>
                   <option value="Double Room Pool View">Double Room Pool View</option>
                   <option value="Double Room Mountain View">Double Room Mountain View</option>
@@ -130,115 +135,113 @@
                 </select>
               </div>
               <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" placeholder="Special requests, questions..."></textarea>
+                <label for="message" data-i18n="contact.message">Message</label>
+                <textarea id="message" name="message" rows="4" data-i18n-placeholder="contact.placeholder_message" placeholder="Special requests, questions..."></textarea>
               </div>
               <div class="form-message" id="reservation-form-message" role="alert" aria-live="polite"></div>
-              <button type="submit" class="btn btn-primary">Send reservation request</button>
+              <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Send reservation request</button>
             </form>
           </div>
           <div id="policies" class="policies-wrap">
-            <h2 class="section-title" style="font-size: 1.35rem;">Hotel Policies</h2>
+            <h2 class="section-title" style="font-size: 1.35rem;" data-i18n="contact.policies_title">Hotel Policies</h2>
             <div class="policy-accordion">
               <div class="policy-item is-open">
                 <button type="button" class="policy-trigger" aria-expanded="true" aria-controls="policy-reservations" id="trigger-reservations">
-                  <span class="policy-icon" aria-hidden="true">−</span> Reservations
+                  <span class="policy-icon" aria-hidden="true">−</span> <span data-i18n="contact.policy_reservations">Reservations</span>
                 </button>
                 <div id="policy-reservations" class="policy-content" role="region" aria-labelledby="trigger-reservations">
-                  <ul>
+                  <div data-i18n-html="contact.policy_reservations_content"><ul>
                     <li>Subject to availability a payment request will be sent to you once we have received your reservation request.</li>
                     <li>A deposit of 25% of your stay total is required to guarantee your reservation.</li>
                     <li>Deposit must be made within four calendar days of the receipt of the reservation form, or availability can not be guaranteed.</li>
-                  </ul>
+                  </ul></div>
                 </div>
               </div>
               <div class="policy-item">
                 <button type="button" class="policy-trigger" aria-expanded="false" aria-controls="policy-checkin" id="trigger-checkin">
-                  <span class="policy-icon" aria-hidden="true">+</span> Check In
+                  <span class="policy-icon" aria-hidden="true">+</span> <span data-i18n="contact.policy_checkin">Check In</span>
                 </button>
                 <div id="policy-checkin" class="policy-content" role="region" aria-labelledby="trigger-checkin" hidden>
-                  <ul>
+                  <div data-i18n-html="contact.policy_checkin_content"><ul>
                     <li>15:00 until 23:00 – If you arrive early and your apartment is vacant and ready you may occupy it, if not we will gladly store your luggage until such time that it is ready.</li>
                     <li>Payment in full, along with a government-issued ID, must be received in order for you to check-in.</li>
-                  </ul>
+                  </ul></div>
                 </div>
               </div>
               <div class="policy-item">
                 <button type="button" class="policy-trigger" aria-expanded="false" aria-controls="policy-checkout" id="trigger-checkout">
-                  <span class="policy-icon" aria-hidden="true">+</span> Check Out
+                  <span class="policy-icon" aria-hidden="true">+</span> <span data-i18n="contact.policy_checkout">Check Out</span>
                 </button>
                 <div id="policy-checkout" class="policy-content" role="region" aria-labelledby="trigger-checkout" hidden>
-                  <ul>
-                    <li>Until 11:00</li>
-                  </ul>
+                  <div data-i18n-html="contact.policy_checkout_content"><ul><li>Until 11:00</li></ul></div>
                 </div>
               </div>
               <div class="policy-item">
                 <button type="button" class="policy-trigger" aria-expanded="false" aria-controls="policy-children" id="trigger-children">
-                  <span class="policy-icon" aria-hidden="true">+</span> Children
+                  <span class="policy-icon" aria-hidden="true">+</span> <span data-i18n="contact.policy_children_accordion">Children</span>
                 </button>
                 <div id="policy-children" class="policy-content" role="region" aria-labelledby="trigger-children" hidden>
-                  <ul>
+                  <div data-i18n-html="contact.policy_children_content"><ul>
                     <li>Babycots for children up to 2 years old are available at no extra cost upon request.</li>
-                  </ul>
+                  </ul></div>
                 </div>
               </div>
               <div class="policy-item">
                 <button type="button" class="policy-trigger" aria-expanded="false" aria-controls="policy-payments" id="trigger-payments">
-                  <span class="policy-icon" aria-hidden="true">+</span> Payments
+                  <span class="policy-icon" aria-hidden="true">+</span> <span data-i18n="contact.policy_payments">Payments</span>
                 </button>
                 <div id="policy-payments" class="policy-content" role="region" aria-labelledby="trigger-payments" hidden>
-                  <ul>
+                  <div data-i18n-html="contact.policy_payments_content"><ul>
                     <li>Payment in full, along with a government-issued ID, must be received upon your arrival.</li>
                     <li>We accept cash, bank deposits, and Western Union.</li>
-                  </ul>
+                  </ul></div>
                 </div>
               </div>
               <div class="policy-item">
                 <button type="button" class="policy-trigger" aria-expanded="false" aria-controls="policy-cancellations" id="trigger-cancellations">
-                  <span class="policy-icon" aria-hidden="true">+</span> Cancellations
+                  <span class="policy-icon" aria-hidden="true">+</span> <span data-i18n="contact.policy_cancellations">Cancellations</span>
                 </button>
                 <div id="policy-cancellations" class="policy-content" role="region" aria-labelledby="trigger-cancellations" hidden>
-                  <ul>
+                  <div data-i18n-html="contact.policy_cancellations_content"><ul>
                     <li>Cancellation requests will only be accepted via email to <a href="mailto:lafeyra.hotel@gmail.com" class="link-muted">lafeyra.hotel@gmail.com</a>.</li>
                     <li>Cancellation requests received 21 days or more prior to the scheduled arrival date will receive a full refund, minus any banking or money transfer costs.</li>
                     <li>Cancellation requests received less than 21 days prior to the scheduled arrival date will receive no refund.</li>
                     <li>For &lsquo;Non-shows&rsquo; (guests who do not arrive without cancelling), the deposit is forfeit and will not be refunded.</li>
-                  </ul>
+                  </ul></div>
                 </div>
               </div>
               <div class="policy-item">
                 <button type="button" class="policy-trigger" aria-expanded="false" aria-controls="policy-early" id="trigger-early">
-                  <span class="policy-icon" aria-hidden="true">+</span> Early departures
+                  <span class="policy-icon" aria-hidden="true">+</span> <span data-i18n="contact.policy_early">Early departures</span>
                 </button>
                 <div id="policy-early" class="policy-content" role="region" aria-labelledby="trigger-early" hidden>
-                  <ul>
+                  <div data-i18n-html="contact.policy_early_content"><ul>
                     <li>If for any reason your departure is earlier than planned, you will be charged 50% of the remaining balance. If the remaining balance is less than the cost of a single night you will be charged for the entire night.</li>
-                  </ul>
+                  </ul></div>
                 </div>
               </div>
               <div class="policy-item">
                 <button type="button" class="policy-trigger" aria-expanded="false" aria-controls="policy-cleaning" id="trigger-cleaning">
-                  <span class="policy-icon" aria-hidden="true">+</span> Cleaning
+                  <span class="policy-icon" aria-hidden="true">+</span> <span data-i18n="contact.policy_cleaning">Cleaning</span>
                 </button>
                 <div id="policy-cleaning" class="policy-content" role="region" aria-labelledby="trigger-cleaning" hidden>
-                  <ul>
+                  <div data-i18n-html="contact.policy_cleaning_content"><ul>
                     <li>Your accommodations are cleaned and stocked with fresh linens and towels prior to your arrival.</li>
                     <li>Cleaning is provided for all studios/suites on a daily basis.</li>
                     <li>Towels are changed every two days.</li>
                     <li>Linens are changed every four days.</li>
-                  </ul>
+                  </ul></div>
                 </div>
               </div>
               <div class="policy-item">
                 <button type="button" class="policy-trigger" aria-expanded="false" aria-controls="policy-general" id="trigger-general">
-                  <span class="policy-icon" aria-hidden="true">+</span> General Policies
+                  <span class="policy-icon" aria-hidden="true">+</span> <span data-i18n="contact.policy_general">General Policies</span>
                 </button>
                 <div id="policy-general" class="policy-content" role="region" aria-labelledby="trigger-general" hidden>
-                  <ul>
+                  <div data-i18n-html="contact.policy_general_content"><ul>
                     <li>Small pets are NOT allowed.</li>
                     <li>Smoking is strictly prohibited in all inside areas of rooms and apartments. Smoking on the balconies is allowed.</li>
-                  </ul>
+                  </ul></div>
                 </div>
               </div>
             </div>
@@ -268,11 +271,11 @@
       </a>
       <div class="footer-grid">
         <div class="footer-block footer-contact">
-          <h3 class="footer-title">Get in Touch</h3>
+          <h3 class="footer-title" data-i18n="footer.get_in_touch">Get in Touch</h3>
           <ul class="footer-contact-list">
-            <li><strong>Address</strong><br />Limenaria, Thassos, Greece</li>
-            <li><strong>Phone</strong><br /><a href="tel:+306981955857" class="footer-link">+30 6981 955 857</a></li>
-            <li><strong>Email</strong><br /><a href="mailto:info@lafeyrahotel.gr" class="footer-link">info@lafeyrahotel.gr</a></li>
+            <li><strong data-i18n="footer.address">Address</strong><br /><span data-i18n="footer.address_value">Limenaria, Thassos, Greece</span></li>
+            <li><strong data-i18n="footer.phone">Phone</strong><br /><a href="tel:+306981955857" class="footer-link">+30 6981 955 857</a></li>
+            <li><strong data-i18n="footer.email">Email</strong><br /><a href="mailto:info@lafeyrahotel.gr" class="footer-link">info@lafeyrahotel.gr</a></li>
           </ul>
           <div class="footer-social">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-link social-link-fb" aria-label="Facebook">Facebook</a>
@@ -280,29 +283,30 @@
           </div>
         </div>
         <div class="footer-block footer-links">
-          <h3 class="footer-title">Quick Links</h3>
+          <h3 class="footer-title" data-i18n="footer.quick_links">Quick Links</h3>
           <ul class="footer-nav">
-            <li><a href="index.html" class="footer-link">Home</a></li>
-            <li><a href="rooms.html" class="footer-link">Rooms</a></li>
-            <li><a href="restaurant.html" class="footer-link">Restaurant</a></li>
-            <li><a href="gallery.html" class="footer-link">Gallery</a></li>
-            <li><a href="contact.html" class="footer-link">Contact &amp; Reservations</a></li>
-            <li><a href="info/location.html" class="footer-link">Location</a></li>
+            <li><a href="index.html" class="footer-link" data-i18n="footer.home">Home</a></li>
+            <li><a href="rooms.html" class="footer-link" data-i18n="footer.rooms">Rooms</a></li>
+            <li><a href="restaurant.html" class="footer-link" data-i18n="footer.restaurant">Restaurant</a></li>
+            <li><a href="gallery.html" class="footer-link" data-i18n="footer.gallery">Gallery</a></li>
+            <li><a href="contact.html" class="footer-link" data-i18n="footer.contact_reservations">Contact &amp; Reservations</a></li>
+            <li><a href="info/location.html" class="footer-link" data-i18n="footer.location">Location</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="footer-text">&copy; <span id="footer-year"></span> Lafeyra Hotel &amp; Suites — Limenaria, Thassos</p>
+        <p class="footer-text">&copy; <span id="footer-year"></span> <span data-i18n="footer.copyright">Lafeyra Hotel &amp; Suites — Limenaria, Thassos</span></p>
       </div>
     </div>
   </footer>
   <div id="cookie-consent" class="cookie-consent" role="dialog" aria-label="Cookie consent" aria-live="polite">
     <div class="cookie-consent-inner">
-      <p class="cookie-consent-text">We use cookies to improve your experience on our site. By continuing you accept our use of cookies. <a href="contact.html#policies" class="cookie-consent-link">Learn more</a></p>
-      <button type="button" class="btn cookie-consent-btn" id="cookie-consent-accept" aria-label="Accept cookies">Accept</button>
+      <p class="cookie-consent-text"><span data-i18n="cookie.text">We use cookies to improve your experience on our site. By continuing you accept our use of cookies.</span> <a href="contact.html#policies" class="cookie-consent-link" data-i18n="cookie.learn_more">Learn more</a></p>
+      <button type="button" class="btn cookie-consent-btn" id="cookie-consent-accept" aria-label="Accept cookies" data-i18n="cookie.accept">Accept</button>
     </div>
   </div>
   <script src="data/rooms.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/rooms-render.js"></script>
   <script src="js/reservation-config.js"></script>
   <script src="js/main.js"></script>

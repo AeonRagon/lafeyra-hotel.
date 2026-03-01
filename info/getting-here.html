@@ -28,34 +28,39 @@
           <span></span><span></span><span></span>
         </button>
         <ul id="menu-main" class="nav-menu">
-          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../index.html" data-i18n="nav.home">HOME</a></li>
           <li class="nav-item-has-dropdown">
-            <a href="../rooms.html" aria-haspopup="true" aria-expanded="false">STAY</a>
+            <a href="../rooms.html" aria-haspopup="true" aria-expanded="false" data-i18n="nav.stay">STAY</a>
             <ul class="nav-dropdown">
-              <li><a href="../rooms.html">OVERVIEW</a></li>
-              <li><a href="../rooms/double-room-sea-view.html">DOUBLE ROOM SEA VIEW</a></li>
-              <li><a href="../rooms/double-room-pool-view.html">DOUBLE ROOM POOL VIEW</a></li>
-              <li><a href="../rooms/double-room-mountain-view.html">DOUBLE ROOM MOUNTAIN VIEW</a></li>
-              <li><a href="../rooms/triple-room-sea-view.html">TRIPLE ROOM SEA VIEW</a></li>
-              <li><a href="../rooms/triple-room-pool-view.html">TRIPLE ROOM POOL VIEW</a></li>
-              <li><a href="../rooms/quadruple-studio-upper-floor.html">QUADRUPLE STUDIO (UPPER FLOOR)</a></li>
-              <li><a href="../rooms/quadruple-studio-ground-floor.html">QUADRUPLE STUDIO GROUND FLOOR</a></li>
-              <li><a href="../rooms/deluxe-triple-suite.html">DELUXE TRIPLE SUITE</a></li>
+              <li><a href="../rooms.html" data-i18n="nav.overview">OVERVIEW</a></li>
+              <li><a href="../rooms/double-room-sea-view.html" data-i18n="nav.double_sea">DOUBLE ROOM SEA VIEW</a></li>
+              <li><a href="../rooms/double-room-pool-view.html" data-i18n="nav.double_pool">DOUBLE ROOM POOL VIEW</a></li>
+              <li><a href="../rooms/double-room-mountain-view.html" data-i18n="nav.double_mountain">DOUBLE ROOM MOUNTAIN VIEW</a></li>
+              <li><a href="../rooms/triple-room-sea-view.html" data-i18n="nav.triple_sea">TRIPLE ROOM SEA VIEW</a></li>
+              <li><a href="../rooms/triple-room-pool-view.html" data-i18n="nav.triple_pool">TRIPLE ROOM POOL VIEW</a></li>
+              <li><a href="../rooms/quadruple-studio-upper-floor.html" data-i18n="nav.quad_upper">QUADRUPLE STUDIO (UPPER FLOOR)</a></li>
+              <li><a href="../rooms/quadruple-studio-ground-floor.html" data-i18n="nav.quad_ground">QUADRUPLE STUDIO GROUND FLOOR</a></li>
+              <li><a href="../rooms/deluxe-triple-suite.html" data-i18n="nav.deluxe_suite">DELUXE TRIPLE SUITE</a></li>
             </ul>
           </li>
           <li class="nav-item-has-dropdown">
-            <a href="location.html" aria-haspopup="true" aria-expanded="false">INFO</a>
+            <a href="location.html" aria-haspopup="true" aria-expanded="false" data-i18n="nav.info">INFO</a>
             <ul class="nav-dropdown">
-              <li><a href="location.html">LOCATION</a></li>
-              <li><a href="experiences.html">EXPERIENCES</a></li>
-              <li><a href="getting-here.html">GETTING HERE</a></li>
+              <li><a href="location.html" data-i18n="nav.location">LOCATION</a></li>
+              <li><a href="experiences.html" data-i18n="nav.experiences">EXPERIENCES</a></li>
+              <li><a href="getting-here.html" data-i18n="nav.getting_here">GETTING HERE</a></li>
             </ul>
           </li>
-          <li><a href="../gallery.html">GALLERY</a></li>
-          <li><a href="../restaurant.html">RESTAURANT</a></li>
-          <li><a href="../contact.html">CONTACT</a></li>
-          <li class="nav-cta"><a href="../contact.html">BOOK NOW</a></li>
+          <li><a href="../gallery.html" data-i18n="nav.gallery">GALLERY</a></li>
+          <li><a href="../restaurant.html" data-i18n="nav.restaurant">RESTAURANT</a></li>
+          <li><a href="../contact.html" data-i18n="nav.contact">CONTACT</a></li>
+          <li class="nav-cta"><a href="../contact.html" data-i18n="nav.book_now">BOOK NOW</a></li>
         </ul>
+        <div class="lang-switcher" role="navigation" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+          <span class="lang-sep">|</span>
+          <button type="button" class="lang-btn" data-lang="el" aria-pressed="false">ΕΛ</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -77,8 +82,8 @@
     <section class="section">
       <div class="container">
         <header class="section-header reveal">
-          <p class="section-label">Travel</p>
-          <h1 class="section-title">Getting Here</h1>
+          <p class="section-label" data-i18n="info.getting_here_label">Travel</p>
+          <h1 class="section-title" data-i18n="info.getting_here_title">Getting Here</h1>
         </header>
         <p class="section-desc">
           There is only one way to reach Thassos and that is by boat. The island has two ferry ports, the main one is in <strong>Limenas (Thassos Town)</strong>, the capital of the island. The route to Limenas is from <strong>Keramoti</strong> on the mainland and is the most popular route to get to Thassos. The reason for that is that during the summer months the boats run every half an hour and the journey time is only 35 minutes. The distance from Limenas to Limenaria is approximately 38&nbsp;km&rsquo;s, take the island ring road and travel in an anti clockwise direction and follow the signs for Skala Prinos / Skala Kalirachi until you reach Limenaria.
@@ -105,9 +110,10 @@
       <a href="../index.html" class="footer-logo" aria-label="LaFeyra Luxury rooms – Home">
         <img src="../images/logo.png" alt="" width="140" height="auto" />
       </a>
-      <p class="footer-text">Lafeyra Hotel Thassos – Getting Here &copy; <span id="footer-year"></span></p>
+      <p class="footer-text"><span data-i18n="info.footer_getting_here">Lafeyra Hotel Thassos – Getting Here</span> &copy; <span id="footer-year"></span></p>
     </div>
   </footer>
+  <script src="../js/i18n.js"></script>
   <script src="../data/rooms.js"></script>
   <script src="../js/rooms-render.js"></script>
   <script src="../js/main.js"></script>

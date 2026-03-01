@@ -30,34 +30,39 @@
           <span></span><span></span><span></span>
         </button>
         <ul id="menu-main" class="nav-menu">
-          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html" data-i18n="nav.home">HOME</a></li>
           <li class="nav-item-has-dropdown">
-            <a href="rooms.html">STAY</a>
+            <a href="rooms.html" data-i18n="nav.stay">STAY</a>
             <ul class="nav-dropdown">
-              <li><a href="rooms.html">OVERVIEW</a></li>
-              <li><a href="rooms/double-room-sea-view.html">DOUBLE ROOM SEA VIEW</a></li>
-              <li><a href="rooms/double-room-pool-view.html">DOUBLE ROOM POOL VIEW</a></li>
-              <li><a href="rooms/double-room-mountain-view.html">DOUBLE ROOM MOUNTAIN VIEW</a></li>
-              <li><a href="rooms/triple-room-sea-view.html">TRIPLE ROOM SEA VIEW</a></li>
-              <li><a href="rooms/triple-room-pool-view.html">TRIPLE ROOM POOL VIEW</a></li>
-              <li><a href="rooms/quadruple-studio-upper-floor.html">QUADRUPLE STUDIO (UPPER FLOOR)</a></li>
-              <li><a href="rooms/quadruple-studio-ground-floor.html">QUADRUPLE STUDIO GROUND FLOOR</a></li>
-              <li><a href="rooms/deluxe-triple-suite.html">DELUXE TRIPLE SUITE</a></li>
+              <li><a href="rooms.html" data-i18n="nav.overview">OVERVIEW</a></li>
+              <li><a href="rooms/double-room-sea-view.html" data-i18n="nav.double_sea">DOUBLE ROOM SEA VIEW</a></li>
+              <li><a href="rooms/double-room-pool-view.html" data-i18n="nav.double_pool">DOUBLE ROOM POOL VIEW</a></li>
+              <li><a href="rooms/double-room-mountain-view.html" data-i18n="nav.double_mountain">DOUBLE ROOM MOUNTAIN VIEW</a></li>
+              <li><a href="rooms/triple-room-sea-view.html" data-i18n="nav.triple_sea">TRIPLE ROOM SEA VIEW</a></li>
+              <li><a href="rooms/triple-room-pool-view.html" data-i18n="nav.triple_pool">TRIPLE ROOM POOL VIEW</a></li>
+              <li><a href="rooms/quadruple-studio-upper-floor.html" data-i18n="nav.quad_upper">QUADRUPLE STUDIO (UPPER FLOOR)</a></li>
+              <li><a href="rooms/quadruple-studio-ground-floor.html" data-i18n="nav.quad_ground">QUADRUPLE STUDIO GROUND FLOOR</a></li>
+              <li><a href="rooms/deluxe-triple-suite.html" data-i18n="nav.deluxe_suite">DELUXE TRIPLE SUITE</a></li>
             </ul>
           </li>
           <li class="nav-item-has-dropdown">
-            <a href="info/location.html" aria-haspopup="true" aria-expanded="false">INFO</a>
+            <a href="info/location.html" aria-haspopup="true" aria-expanded="false" data-i18n="nav.info">INFO</a>
             <ul class="nav-dropdown">
-              <li><a href="info/location.html">LOCATION</a></li>
-              <li><a href="info/experiences.html">EXPERIENCES</a></li>
-              <li><a href="info/getting-here.html">GETTING HERE</a></li>
+              <li><a href="info/location.html" data-i18n="nav.location">LOCATION</a></li>
+              <li><a href="info/experiences.html" data-i18n="nav.experiences">EXPERIENCES</a></li>
+              <li><a href="info/getting-here.html" data-i18n="nav.getting_here">GETTING HERE</a></li>
             </ul>
           </li>
-          <li><a href="gallery.html">GALLERY</a></li>
-          <li><a href="restaurant.html">RESTAURANT</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li class="nav-cta"><a href="contact.html">BOOK NOW</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">GALLERY</a></li>
+          <li><a href="restaurant.html" data-i18n="nav.restaurant">RESTAURANT</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">CONTACT</a></li>
+          <li class="nav-cta"><a href="contact.html" data-i18n="nav.book_now">BOOK NOW</a></li>
         </ul>
+        <div class="lang-switcher" role="navigation" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+          <span class="lang-sep">|</span>
+          <button type="button" class="lang-btn" data-lang="el" aria-pressed="false">ΕΛ</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -70,10 +75,10 @@
           <div class="hero-bg" style="background-image: url('images/hero-slide1.png');"></div>
           <div class="hero-overlay">
             <div class="container hero-home-inner">
-              <p class="hero-home-label">EXQUISITE HOTEL</p>
-              <h1 class="hero-home-title">ENJOY A LUXURY EXPERIENCE</h1>
-              <p class="hero-home-desc">Welcome to Lafeyra luxury rooms</p>
-              <a href="rooms.html" class="btn btn-hero-outline">VIEW ROOMS</a>
+              <p class="hero-home-label" data-i18n="hero.label">EXQUISITE HOTEL</p>
+              <h1 class="hero-home-title" data-i18n="hero.slide1.title">ENJOY A LUXURY EXPERIENCE</h1>
+              <p class="hero-home-desc" data-i18n="hero.slide1.desc">Welcome to Lafeyra luxury rooms</p>
+              <a href="rooms.html" class="btn btn-hero-outline" data-i18n="hero.view_rooms">VIEW ROOMS</a>
             </div>
           </div>
         </div>
@@ -81,10 +86,10 @@
           <div class="hero-bg" style="background-image: url('images/hero-slide2.png');"></div>
           <div class="hero-overlay">
             <div class="container hero-home-inner">
-              <p class="hero-home-label">EXQUISITE HOTEL</p>
-              <h1 class="hero-home-title">GREEK HOSPITALITY AT ITS BEST</h1>
-              <p class="hero-home-desc">We are here to provide our guests with everything they need for a special holiday.</p>
-              <a href="rooms.html" class="btn btn-hero-outline">VIEW ROOMS</a>
+              <p class="hero-home-label" data-i18n="hero.label">EXQUISITE HOTEL</p>
+              <h1 class="hero-home-title" data-i18n="hero.slide2.title">GREEK HOSPITALITY AT ITS BEST</h1>
+              <p class="hero-home-desc" data-i18n="hero.slide2.desc">We are here to provide our guests with everything they need for a special holiday.</p>
+              <a href="rooms.html" class="btn btn-hero-outline" data-i18n="hero.view_rooms">VIEW ROOMS</a>
             </div>
           </div>
         </div>
@@ -92,10 +97,10 @@
           <div class="hero-bg" style="background-image: url('images/hero-slide3.png');"></div>
           <div class="hero-overlay">
             <div class="container hero-home-inner">
-              <p class="hero-home-label">EXQUISITE HOTEL</p>
-              <h1 class="hero-home-title">EXCEPTIONAL LOCATION</h1>
-              <p class="hero-home-desc">Close your eyes...Imagine waking up everyday to a priceless view</p>
-              <a href="rooms.html" class="btn btn-hero-outline">VIEW ROOMS</a>
+              <p class="hero-home-label" data-i18n="hero.label">EXQUISITE HOTEL</p>
+              <h1 class="hero-home-title" data-i18n="hero.slide3.title">EXCEPTIONAL LOCATION</h1>
+              <p class="hero-home-desc" data-i18n="hero.slide3.desc">Close your eyes...Imagine waking up everyday to a priceless view</p>
+              <a href="rooms.html" class="btn btn-hero-outline" data-i18n="hero.view_rooms">VIEW ROOMS</a>
             </div>
           </div>
         </div>
@@ -111,9 +116,9 @@
     <section class="section home-intro">
       <div class="container home-intro-grid">
         <div class="home-intro-text">
-          <p class="home-intro-label">LIMENARIA</p>
-          <h2 class="home-intro-title">LAFEYRA HOTEL</h2>
-          <p class="home-intro-desc">LaFeyra Hotel is situated in the picturesque village of Limenaria, on the southern part of Thassos island. Conveniently located, just a few meters away from the wonderful beach of Limenaria, yet sufficiently close to the center of the village with all the taverns, restaurants, shops and bars. The breathing distance from the beach gives you the opportunity to spend quality and relaxing time enjoying the crystal clear waters of the Aegean sea, without moving far from the comfort of your hotel. LaFeyra Hotel is an ideal choice for anyone who wishes to experience the beauties of Thassos island, by enjoying a relaxed holiday at the same time.</p>
+          <p class="home-intro-label" data-i18n="intro.label">LIMENARIA</p>
+          <h2 class="home-intro-title" data-i18n="intro.title">LAFEYRA HOTEL</h2>
+          <p class="home-intro-desc" data-i18n="intro.desc">LaFeyra Hotel is situated in the picturesque village of Limenaria, on the southern part of Thassos island. Conveniently located, just a few meters away from the wonderful beach of Limenaria, yet sufficiently close to the center of the village with all the taverns, restaurants, shops and bars. The breathing distance from the beach gives you the opportunity to spend quality and relaxing time enjoying the crystal clear waters of the Aegean sea, without moving far from the comfort of your hotel. LaFeyra Hotel is an ideal choice for anyone who wishes to experience the beauties of Thassos island, by enjoying a relaxed holiday at the same time.</p>
         </div>
         <div class="home-intro-features">
           <div class="home-feature">
@@ -121,8 +126,8 @@
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v12"/><path d="M5 14c2.5 0 4.5-2 7-2s4.5 2 7 2"/><path d="M12 14v8"/><path d="M8 22h8"/><path d="M12 14c-2 0-3.5-2.5-3.5-5S10 4 12 4s3.5 1.5 3.5 4"/></svg>
             </span>
             <div>
-              <h3 class="home-feature-title">CLOSE TO BEACH</h3>
-              <p class="home-feature-desc">Just 60 meters from the beach.</p>
+              <h3 class="home-feature-title" data-i18n="intro.feature1.title">CLOSE TO BEACH</h3>
+              <p class="home-feature-desc" data-i18n="intro.feature1.desc">Just 60 meters from the beach.</p>
             </div>
           </div>
           <div class="home-feature">
@@ -130,8 +135,8 @@
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
             </span>
             <div>
-              <h3 class="home-feature-title">BREAKFAST</h3>
-              <p class="home-feature-desc">Delicious breakfast served daily.</p>
+              <h3 class="home-feature-title" data-i18n="intro.feature2.title">BREAKFAST</h3>
+              <p class="home-feature-desc" data-i18n="intro.feature2.desc">Delicious breakfast served daily.</p>
             </div>
           </div>
           <div class="home-feature">
@@ -139,8 +144,8 @@
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/><path d="m4 14 4 4"/><path d="m16 18 4 4"/></svg>
             </span>
             <div>
-              <h3 class="home-feature-title">STUNNING VIEW</h3>
-              <p class="home-feature-desc">Lafeyra has a remarkable view.</p>
+              <h3 class="home-feature-title" data-i18n="intro.feature3.title">STUNNING VIEW</h3>
+              <p class="home-feature-desc" data-i18n="intro.feature3.desc">Lafeyra has a remarkable view.</p>
             </div>
           </div>
         </div>
@@ -151,8 +156,8 @@
     <section id="rooms" class="home-rooms">
       <div class="container">
         <div class="home-rooms-header">
-          <p class="home-rooms-label">LAFEYRA HOTEL</p>
-          <h2 class="home-rooms-title">OUR ROOMS</h2>
+          <p class="home-rooms-label" data-i18n="rooms.label">LAFEYRA HOTEL</p>
+          <h2 class="home-rooms-title" data-i18n="rooms.title">OUR ROOMS</h2>
         </div>
       </div>
       <div class="home-rooms-carousel-wrap">
@@ -169,30 +174,30 @@
         </div>
       </div>
       <div class="home-rooms-strip">
-        <a href="rooms.html" class="btn btn-rooms-view">View all rooms</a>
+        <a href="rooms.html" class="btn btn-rooms-view" data-i18n="rooms.view_all">View all rooms</a>
       </div>
     </section>
 
     <!-- 4. 3 Reasons to Book: dark green, 3 cols, BOOK NOW outline -->
     <section class="home-reasons">
       <div class="container">
-        <h2 class="home-reasons-title">3 REASONS TO BOOK WITH US</h2>
+        <h2 class="home-reasons-title" data-i18n="reasons.title">3 REASONS TO BOOK WITH US</h2>
         <div class="home-reasons-grid">
           <div class="home-reason">
-            <h3 class="home-reason-title">BEST PRICE GUARANTEE</h3>
-            <p class="home-reason-desc">Book now and enjoy the lowest rates available!</p>
+            <h3 class="home-reason-title" data-i18n="reasons.r1.title">BEST PRICE GUARANTEE</h3>
+            <p class="home-reason-desc" data-i18n="reasons.r1.desc">Book now and enjoy the lowest rates available!</p>
           </div>
           <div class="home-reason">
-            <h3 class="home-reason-title">EARLY CHECK IN</h3>
-            <p class="home-reason-desc">Book now and enjoy Early check in / late checkout (upon availability)</p>
+            <h3 class="home-reason-title" data-i18n="reasons.r2.title">EARLY CHECK IN</h3>
+            <p class="home-reason-desc" data-i18n="reasons.r2.desc">Book now and enjoy Early check in / late checkout (upon availability)</p>
           </div>
           <div class="home-reason">
-            <h3 class="home-reason-title">MOLOS RESTAURANT</h3>
-            <p class="home-reason-desc">Get -10% discount at Molos Restaurant</p>
+            <h3 class="home-reason-title" data-i18n="reasons.r3.title">MOLOS RESTAURANT</h3>
+            <p class="home-reason-desc" data-i18n="reasons.r3.desc">Get -10% discount at Molos Restaurant</p>
           </div>
         </div>
         <p class="home-reasons-cta">
-          <a href="contact.html" class="btn btn-reasons-outline">BOOK NOW</a>
+          <a href="contact.html" class="btn btn-reasons-outline" data-i18n="nav.book_now">BOOK NOW</a>
         </p>
       </div>
     </section>
@@ -200,19 +205,19 @@
     <!-- 5. Restaurant teaser: DELICIOUS TRADITION / OUR RESTAURANT / READ MORE -->
     <section class="section home-restaurant-teaser">
       <div class="container home-restaurant-teaser-inner">
-        <h2 class="home-restaurant-title">DELICIOUS TRADITION</h2>
-        <p class="home-restaurant-label">OUR RESTAURANT</p>
-        <p class="home-restaurant-desc">Overlooking the calm blue waters of the Aegean sea, Molos restaurant serves delicious Greek food by keeping faithful to the traditional recipes &amp; most importantly the use of fresh ingredients. The simplicity &amp; freshness of the Greek cuisine promises to be a gastronomy experience that you&rsquo;ll never forget.</p>
-        <a href="restaurant.html" class="btn btn-primary">READ MORE</a>
+        <h2 class="home-restaurant-title" data-i18n="restaurant.title">DELICIOUS TRADITION</h2>
+        <p class="home-restaurant-label" data-i18n="restaurant.label">OUR RESTAURANT</p>
+        <p class="home-restaurant-desc" data-i18n="restaurant.desc">Overlooking the calm blue waters of the Aegean sea, Molos restaurant serves delicious Greek food by keeping faithful to the traditional recipes &amp; most importantly the use of fresh ingredients. The simplicity &amp; freshness of the Greek cuisine promises to be a gastronomy experience that you&rsquo;ll never forget.</p>
+        <a href="restaurant.html" class="btn btn-primary" data-i18n="restaurant.read_more">READ MORE</a>
       </div>
     </section>
 
     <!-- 5b. Text + BOOK NOW block (no image) -->
     <section class="section home-photo-cta-section">
       <div class="container home-photo-cta">
-        <h2 class="home-photo-title">Relax and enjoy<br />your holiday</h2>
-        <p class="home-photo-subtitle">AMAZING HOTEL IN THASSOS</p>
-        <a href="contact.html" class="btn btn-primary">BOOK NOW</a>
+        <h2 class="home-photo-title" data-i18n-html="photo.title">Relax and enjoy<br />your holiday</h2>
+        <p class="home-photo-subtitle" data-i18n="photo.subtitle">AMAZING HOTEL IN THASSOS</p>
+        <a href="contact.html" class="btn btn-primary" data-i18n="nav.book_now">BOOK NOW</a>
       </div>
     </section>
 
@@ -220,12 +225,12 @@
     <section id="location" class="section section-location home-thassos">
       <div class="container location-grid">
         <div class="location-text">
-          <p class="home-thassos-label">THASSOS</p>
-          <h2 class="section-title home-thassos-title">THE EMERALD ISLAND</h2>
-          <p class="section-desc">
+          <p class="home-thassos-label" data-i18n="thassos.label">THASSOS</p>
+          <h2 class="section-title home-thassos-title" data-i18n="thassos.title">THE EMERALD ISLAND</h2>
+          <p class="section-desc" data-i18n="thassos.desc">
             Thassos island is the most northerly of all the Greek islands and can be found in the Aegean Sea nestled between the Halkidiki Peninsular and Kavala. Conveniently located, it is only a few kilometres away from the nearest ports on the mainland.
           </p>
-          <a href="info/location.html" class="btn btn-primary">READ MORE</a>
+          <a href="info/location.html" class="btn btn-primary" data-i18n="common.read_more">READ MORE</a>
         </div>
         <div class="location-map">
           <iframe
@@ -250,11 +255,11 @@
       </a>
       <div class="footer-grid">
         <div class="footer-block footer-contact">
-          <h3 class="footer-title">Get in Touch</h3>
+          <h3 class="footer-title" data-i18n="footer.get_in_touch">Get in Touch</h3>
           <ul class="footer-contact-list">
-            <li><strong>Address</strong><br />Limenaria, Thassos, Greece</li>
-            <li><strong>Phone</strong><br /><a href="tel:+306981955857" class="footer-link">+30 6981 955 857</a></li>
-            <li><strong>Email</strong><br /><a href="mailto:info@lafeyrahotel.gr" class="footer-link">info@lafeyrahotel.gr</a></li>
+            <li><strong data-i18n="footer.address">Address</strong><br /><span data-i18n="footer.address_value">Limenaria, Thassos, Greece</span></li>
+            <li><strong data-i18n="footer.phone">Phone</strong><br /><a href="tel:+306981955857" class="footer-link">+30 6981 955 857</a></li>
+            <li><strong data-i18n="footer.email">Email</strong><br /><a href="mailto:info@lafeyrahotel.gr" class="footer-link">info@lafeyrahotel.gr</a></li>
           </ul>
           <div class="footer-social">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-link social-link-fb" aria-label="Facebook">Facebook</a>
@@ -262,27 +267,27 @@
           </div>
         </div>
         <div class="footer-block footer-links">
-          <h3 class="footer-title">Quick Links</h3>
+          <h3 class="footer-title" data-i18n="footer.quick_links">Quick Links</h3>
           <ul class="footer-nav">
-            <li><a href="index.html" class="footer-link">Home</a></li>
-            <li><a href="rooms.html" class="footer-link">Rooms</a></li>
-            <li><a href="restaurant.html" class="footer-link">Restaurant</a></li>
-            <li><a href="gallery.html" class="footer-link">Gallery</a></li>
-            <li><a href="contact.html" class="footer-link">Contact &amp; Reservations</a></li>
-            <li><a href="info/location.html" class="footer-link">Location</a></li>
+            <li><a href="index.html" class="footer-link" data-i18n="footer.home">Home</a></li>
+            <li><a href="rooms.html" class="footer-link" data-i18n="footer.rooms">Rooms</a></li>
+            <li><a href="restaurant.html" class="footer-link" data-i18n="footer.restaurant">Restaurant</a></li>
+            <li><a href="gallery.html" class="footer-link" data-i18n="footer.gallery">Gallery</a></li>
+            <li><a href="contact.html" class="footer-link" data-i18n="footer.contact_reservations">Contact &amp; Reservations</a></li>
+            <li><a href="info/location.html" class="footer-link" data-i18n="footer.location">Location</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="footer-text">&copy; <span id="footer-year"></span> Lafeyra Hotel &amp; Suites — Limenaria, Thassos</p>
+        <p class="footer-text">&copy; <span id="footer-year"></span> <span data-i18n="footer.copyright">Lafeyra Hotel &amp; Suites — Limenaria, Thassos</span></p>
       </div>
     </div>
   </footer>
 
   <div id="cookie-consent" class="cookie-consent" role="dialog" aria-label="Cookie consent" aria-live="polite">
     <div class="cookie-consent-inner">
-      <p class="cookie-consent-text">We use cookies to improve your experience on our site. By continuing you accept our use of cookies. <a href="contact.html#policies" class="cookie-consent-link">Learn more</a></p>
-      <button type="button" class="btn cookie-consent-btn" id="cookie-consent-accept" aria-label="Accept cookies">Accept</button>
+      <p class="cookie-consent-text"><span data-i18n="cookie.text">We use cookies to improve your experience on our site. By continuing you accept our use of cookies.</span> <a href="contact.html#policies" class="cookie-consent-link" data-i18n="cookie.learn_more">Learn more</a></p>
+      <button type="button" class="btn cookie-consent-btn" id="cookie-consent-accept" aria-label="Accept cookies" data-i18n="cookie.accept">Accept</button>
     </div>
   </div>
 
@@ -292,6 +297,7 @@
   </div>
 
   <script src="data/rooms.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/rooms-render.js"></script>
   <script src="js/reservation-config.js"></script>
   <script src="js/main.js"></script>

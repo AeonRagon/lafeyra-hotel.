@@ -30,34 +30,39 @@
           <span></span><span></span><span></span>
         </button>
         <ul id="menu-main" class="nav-menu">
-          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html" data-i18n="nav.home">HOME</a></li>
           <li class="nav-item-has-dropdown">
-            <a href="rooms.html">STAY</a>
+            <a href="rooms.html" data-i18n="nav.stay">STAY</a>
             <ul class="nav-dropdown">
-              <li><a href="rooms.html">OVERVIEW</a></li>
-              <li><a href="rooms/double-room-sea-view.html">DOUBLE ROOM SEA VIEW</a></li>
-              <li><a href="rooms/double-room-pool-view.html">DOUBLE ROOM POOL VIEW</a></li>
-              <li><a href="rooms/double-room-mountain-view.html">DOUBLE ROOM MOUNTAIN VIEW</a></li>
-              <li><a href="rooms/triple-room-sea-view.html">TRIPLE ROOM SEA VIEW</a></li>
-              <li><a href="rooms/triple-room-pool-view.html">TRIPLE ROOM POOL VIEW</a></li>
-              <li><a href="rooms/quadruple-studio-upper-floor.html">QUADRUPLE STUDIO (UPPER FLOOR)</a></li>
-              <li><a href="rooms/quadruple-studio-ground-floor.html">QUADRUPLE STUDIO GROUND FLOOR</a></li>
-              <li><a href="rooms/deluxe-triple-suite.html">DELUXE TRIPLE SUITE</a></li>
+              <li><a href="rooms.html" data-i18n="nav.overview">OVERVIEW</a></li>
+              <li><a href="rooms/double-room-sea-view.html" data-i18n="nav.double_sea">DOUBLE ROOM SEA VIEW</a></li>
+              <li><a href="rooms/double-room-pool-view.html" data-i18n="nav.double_pool">DOUBLE ROOM POOL VIEW</a></li>
+              <li><a href="rooms/double-room-mountain-view.html" data-i18n="nav.double_mountain">DOUBLE ROOM MOUNTAIN VIEW</a></li>
+              <li><a href="rooms/triple-room-sea-view.html" data-i18n="nav.triple_sea">TRIPLE ROOM SEA VIEW</a></li>
+              <li><a href="rooms/triple-room-pool-view.html" data-i18n="nav.triple_pool">TRIPLE ROOM POOL VIEW</a></li>
+              <li><a href="rooms/quadruple-studio-upper-floor.html" data-i18n="nav.quad_upper">QUADRUPLE STUDIO (UPPER FLOOR)</a></li>
+              <li><a href="rooms/quadruple-studio-ground-floor.html" data-i18n="nav.quad_ground">QUADRUPLE STUDIO GROUND FLOOR</a></li>
+              <li><a href="rooms/deluxe-triple-suite.html" data-i18n="nav.deluxe_suite">DELUXE TRIPLE SUITE</a></li>
             </ul>
           </li>
           <li class="nav-item-has-dropdown">
-            <a href="info/location.html" aria-haspopup="true" aria-expanded="false">INFO</a>
+            <a href="info/location.html" aria-haspopup="true" aria-expanded="false" data-i18n="nav.info">INFO</a>
             <ul class="nav-dropdown">
-              <li><a href="info/location.html">LOCATION</a></li>
-              <li><a href="info/experiences.html">EXPERIENCES</a></li>
-              <li><a href="info/getting-here.html">GETTING HERE</a></li>
+              <li><a href="info/location.html" data-i18n="nav.location">LOCATION</a></li>
+              <li><a href="info/experiences.html" data-i18n="nav.experiences">EXPERIENCES</a></li>
+              <li><a href="info/getting-here.html" data-i18n="nav.getting_here">GETTING HERE</a></li>
             </ul>
           </li>
-          <li><a href="gallery.html">GALLERY</a></li>
-          <li><a href="restaurant.html">RESTAURANT</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li class="nav-cta"><a href="contact.html">BOOK NOW</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">GALLERY</a></li>
+          <li><a href="restaurant.html" data-i18n="nav.restaurant">RESTAURANT</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">CONTACT</a></li>
+          <li class="nav-cta"><a href="contact.html" data-i18n="nav.book_now">BOOK NOW</a></li>
         </ul>
+        <div class="lang-switcher" role="navigation" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+          <span class="lang-sep">|</span>
+          <button type="button" class="lang-btn" data-lang="el" aria-pressed="false">ΕΛ</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -65,14 +70,14 @@
   <main>
     <section class="stay-hero">
       <div class="container">
-        <h1 class="stay-hero-title">Choose Your Stay</h1>
+        <h1 class="stay-hero-title" data-i18n="rooms.choose_title">Choose Your Stay</h1>
       </div>
     </section>
     <section class="section section-rooms stay-cards-section">
       <div class="container">
         <div id="rooms-grid" class="rooms-grid rooms-grid-2-cols stay-cards-grid"></div>
         <p class="rooms-page-cta">
-          <a href="contact.html" class="btn btn-primary">Request availability</a>
+          <a href="contact.html" class="btn btn-primary" data-i18n="rooms.request_availability">Request availability</a>
         </p>
       </div>
     </section>
@@ -85,11 +90,11 @@
       </a>
       <div class="footer-grid">
         <div class="footer-block footer-contact">
-          <h3 class="footer-title">Get in Touch</h3>
+          <h3 class="footer-title" data-i18n="footer.get_in_touch">Get in Touch</h3>
           <ul class="footer-contact-list">
-            <li><strong>Address</strong><br />Limenaria, Thassos, Greece</li>
-            <li><strong>Phone</strong><br /><a href="tel:+306981955857" class="footer-link">+30 6981 955 857</a></li>
-            <li><strong>Email</strong><br /><a href="mailto:info@lafeyrahotel.gr" class="footer-link">info@lafeyrahotel.gr</a></li>
+            <li><strong data-i18n="footer.address">Address</strong><br /><span data-i18n="footer.address_value">Limenaria, Thassos, Greece</span></li>
+            <li><strong data-i18n="footer.phone">Phone</strong><br /><a href="tel:+306981955857" class="footer-link">+30 6981 955 857</a></li>
+            <li><strong data-i18n="footer.email">Email</strong><br /><a href="mailto:info@lafeyrahotel.gr" class="footer-link">info@lafeyrahotel.gr</a></li>
           </ul>
           <div class="footer-social">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-link social-link-fb" aria-label="Facebook">Facebook</a>
@@ -97,29 +102,30 @@
           </div>
         </div>
         <div class="footer-block footer-links">
-          <h3 class="footer-title">Quick Links</h3>
+          <h3 class="footer-title" data-i18n="footer.quick_links">Quick Links</h3>
           <ul class="footer-nav">
-            <li><a href="index.html" class="footer-link">Home</a></li>
-            <li><a href="rooms.html" class="footer-link">Rooms</a></li>
-            <li><a href="restaurant.html" class="footer-link">Restaurant</a></li>
-            <li><a href="gallery.html" class="footer-link">Gallery</a></li>
-            <li><a href="contact.html" class="footer-link">Contact &amp; Reservations</a></li>
-            <li><a href="info/location.html" class="footer-link">Location</a></li>
+            <li><a href="index.html" class="footer-link" data-i18n="footer.home">Home</a></li>
+            <li><a href="rooms.html" class="footer-link" data-i18n="footer.rooms">Rooms</a></li>
+            <li><a href="restaurant.html" class="footer-link" data-i18n="footer.restaurant">Restaurant</a></li>
+            <li><a href="gallery.html" class="footer-link" data-i18n="footer.gallery">Gallery</a></li>
+            <li><a href="contact.html" class="footer-link" data-i18n="footer.contact_reservations">Contact &amp; Reservations</a></li>
+            <li><a href="info/location.html" class="footer-link" data-i18n="footer.location">Location</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="footer-text">&copy; <span id="footer-year"></span> Lafeyra Hotel &amp; Suites — Limenaria, Thassos</p>
+        <p class="footer-text">&copy; <span id="footer-year"></span> <span data-i18n="footer.copyright">Lafeyra Hotel &amp; Suites — Limenaria, Thassos</span></p>
       </div>
     </div>
   </footer>
   <div id="cookie-consent" class="cookie-consent" role="dialog" aria-label="Cookie consent" aria-live="polite">
     <div class="cookie-consent-inner">
-      <p class="cookie-consent-text">We use cookies to improve your experience on our site. By continuing you accept our use of cookies. <a href="contact.html#policies" class="cookie-consent-link">Learn more</a></p>
-      <button type="button" class="btn cookie-consent-btn" id="cookie-consent-accept" aria-label="Accept cookies">Accept</button>
+      <p class="cookie-consent-text"><span data-i18n="cookie.text">We use cookies to improve your experience on our site. By continuing you accept our use of cookies.</span> <a href="contact.html#policies" class="cookie-consent-link" data-i18n="cookie.learn_more">Learn more</a></p>
+      <button type="button" class="btn cookie-consent-btn" id="cookie-consent-accept" aria-label="Accept cookies" data-i18n="cookie.accept">Accept</button>
     </div>
   </div>
   <script src="data/rooms.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/rooms-render.js"></script>
   <script src="js/main.js"></script>
 </body>
