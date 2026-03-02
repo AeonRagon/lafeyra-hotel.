@@ -42,12 +42,48 @@
   // ----- Mobile menu toggle -----
   var menuToggle = document.getElementById('menu-toggle');
   var menuMain = document.getElementById('menu-main');
+  var langSwitcher = document.querySelector('.nav-wrap .lang-switcher');
   if (menuToggle && menuMain) {
     menuToggle.addEventListener('click', function () {
       var isOpen = menuMain.classList.toggle('is-open');
       menuToggle.setAttribute('aria-expanded', isOpen);
+      document.querySelectorAll('.nav-item-has-dropdown.dropdown-open').forEach(function (el) { el.classList.remove('dropdown-open'); });
+      // Show language switcher inside menu on mobile so both EN and ΕΛ are visible
+      var mobileLang = document.getElementById('menu-lang-mobile');
+      if (isOpen && langSwitcher && !mobileLang && window.matchMedia('(max-width: 768px)').matches) {
+        var clone = langSwitcher.cloneNode(true);
+        clone.id = 'menu-lang-mobile';
+        clone.className = clone.className + ' lang-switcher-mobile';
+        menuMain.insertBefore(clone, menuMain.firstChild);
+        clone.querySelectorAll('.lang-btn').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var l = btn.getAttribute('data-lang');
+            if (window.I18N && typeof window.I18N.setLang === 'function') window.I18N.setLang(l);
+          });
+        });
+      } else if (!isOpen && mobileLang) {
+        mobileLang.remove();
+      }
     });
   }
+
+  // ----- Mobile: open/close dropdown (Διαμονή, INFO) on tap -----
+  function isMobileNav() {
+    return window.matchMedia && window.matchMedia('(max-width: 768px)').matches;
+  }
+  document.querySelectorAll('.nav-item-has-dropdown > a').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      if (!isMobileNav()) return;
+      var parent = this.closest('.nav-item-has-dropdown');
+      if (!parent) return;
+      e.preventDefault();
+      var isOpen = parent.classList.toggle('dropdown-open');
+      parent.setAttribute('aria-expanded', isOpen);
+      document.querySelectorAll('.nav-item-has-dropdown').forEach(function (other) {
+        if (other !== parent) other.classList.remove('dropdown-open');
+      });
+    });
+  });
 
   // ----- Hero slideshow (home) -----
   function initHeroSlideshow() {
@@ -93,6 +129,60 @@
     document.addEventListener('DOMContentLoaded', initHeroSlideshow);
   } else {
     initHeroSlideshow();
+  }
+
+  // ----- Room page carousel -----
+  function initRoomCarousel() {
+    var carousel = document.querySelector('.room-carousel');
+    if (!carousel) return;
+    var slides = carousel.querySelectorAll('.room-carousel-slide');
+    var dots = carousel.querySelectorAll('.room-carousel-dot');
+    if (slides.length === 0 || dots.length === 0) return;
+    var currentIndex = 0;
+    var autoInterval;
+
+    function goToSlide(index) {
+      if (index < 0) index = slides.length - 1;
+      if (index >= slides.length) index = 0;
+      currentIndex = index;
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].classList.toggle('room-carousel-slide--active', i === currentIndex);
+      }
+      for (var j = 0; j < dots.length; j++) {
+        dots[j].classList.toggle('room-carousel-dot--active', j === currentIndex);
+        dots[j].setAttribute('aria-label', 'Slide ' + (j + 1));
+      }
+    }
+
+    for (var k = 0; k < dots.length; k++) {
+      (function (idx) {
+        dots[idx].addEventListener('click', function () {
+          goToSlide(idx);
+          if (autoInterval) clearInterval(autoInterval);
+          autoInterval = setInterval(function () { goToSlide(currentIndex + 1); }, 5000);
+        });
+      })(k);
+    }
+    autoInterval = setInterval(function () { goToSlide(currentIndex + 1); }, 5000);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initRoomCarousel);
+  } else {
+    initRoomCarousel();
+  }
+
+  function initRoomGalleryLoadMore() {
+    var btn = document.querySelector('.room-gallery-load-more-btn');
+    var wrap = document.querySelector('.room-gallery-wrap');
+    if (!btn || !wrap) return;
+    btn.addEventListener('click', function () {
+      wrap.classList.add('room-gallery-expanded');
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initRoomGalleryLoadMore);
+  } else {
+    initRoomGalleryLoadMore();
   }
 
   // ----- Booking form (index: short form) -----
@@ -149,7 +239,7 @@
               form.reset();
             } else {
               formMessage.className = 'form-message error';
-              var errMsg = (r.data && r.data.error) ? r.data.error : ('Error ' + r.status + '. Try again or email us at info@lafeyrahotel.gr');
+              var errMsg = (r.data && r.data.error) ? r.data.error : ('Error ' + r.status + '. Try again or email us at lafeyra.hotel@gmail.com');
               if (r.data && r.data.detail) errMsg += ' (' + r.data.detail + ')';
               formMessage.textContent = errMsg;
             }
@@ -158,9 +248,9 @@
             formMessage.className = 'form-message error';
             var errMsg = err && err.message ? err.message : 'Could not send.';
             if (errMsg.indexOf('fetch') !== -1 || errMsg === 'Failed to fetch') {
-              errMsg = 'Network error. Check your connection or try again. You can also email us at info@lafeyrahotel.gr';
+              errMsg = 'Network error. Check your connection or try again. You can also email us at lafeyra.hotel@gmail.com';
             } else {
-              errMsg = errMsg + ' Please try again or email us at info@lafeyrahotel.gr';
+              errMsg = errMsg + ' Please try again or email us at lafeyra.hotel@gmail.com';
             }
             formMessage.textContent = errMsg;
           })
@@ -172,9 +262,9 @@
 
       var subject = encodeURIComponent('Reservation request – Lafeyra Hotel');
       var body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
-      var mailto = 'mailto:info@lafeyrahotel.gr?subject=' + subject + '&body=' + body;
+      var mailto = 'mailto:lafeyra.hotel@gmail.com?subject=' + subject + '&body=' + body;
       formMessage.className = 'form-message success';
-      formMessage.textContent = 'Thank you! Opening your email client to send the request. If it did not open, email us at info@lafeyrahotel.gr';
+      formMessage.textContent = 'Thank you! Opening your email client to send the request. If it did not open, email us at lafeyra.hotel@gmail.com';
       window.location.href = mailto;
     });
   }

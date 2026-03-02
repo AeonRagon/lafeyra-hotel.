@@ -1,17 +1,24 @@
 /* Room inner pages */
 .room-hero {
   position: relative;
-  min-height: 320px;
+  height: 550px;
 }
 .room-hero-bg {
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
 }
 .room-hero .hero-overlay {
+  position: absolute;
+  inset: 0;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.75));
-  padding: 100px 0 120px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 .room-badge {
   display: inline-block;
@@ -34,6 +41,100 @@
   align-items: start;
 }
 .room-main .section-title::after { display: none; }
+
+/* Room carousel – πλήρες πλάτος, μεγάλο */
+.room-carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--color-bg);
+  margin-bottom: 32px;
+}
+.room-carousel-track {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+.room-carousel-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 0;
+  transition: opacity 0.45s ease, visibility 0.45s ease;
+}
+.room-carousel-slide--active {
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+.room-carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.room-carousel-dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 12px;
+}
+.room-carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.room-carousel-dot:hover {
+  border-color: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.4);
+}
+.room-carousel-dot--active {
+  background: #fff;
+  border-color: #fff;
+}
+
+/* Room gallery grid – μικρό, μαζεμένο (4 στήλες, τετράγωνα) */
+.room-gallery-grid {
+  margin-top: 12px;
+  margin-bottom: 32px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.room-gallery-grid .gallery-item img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Load more: κρύψη φωτό μετά τις 12, εμφάνιση με το κουμπί */
+.room-gallery-wrap .room-gallery-more {
+  display: none;
+}
+.room-gallery-wrap.room-gallery-expanded .room-gallery-more {
+  display: block;
+}
+.room-gallery-load-more-wrap {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+.room-gallery-wrap.room-gallery-expanded .room-gallery-load-more-wrap {
+  display: none;
+}
+
 .room-subtitle {
   font-family: var(--font-heading);
   font-size: 20px;
@@ -142,4 +243,10 @@
   }
   .room-sidebar { position: static; }
   .room-gallery { grid-template-columns: 1fr; }
+  .room-carousel-track { aspect-ratio: 16 / 10; }
+  .room-gallery-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  .room-carousel-track { aspect-ratio: 4 / 3; }
+  .room-gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
 }

@@ -122,6 +122,7 @@
       'rooms.request_availability': 'Request availability',
       'gallery.discover': 'Discover',
       'gallery.title': 'Gallery',
+      'gallery.desc': 'A glimpse into the ambience of Lafeyra Hotel and the beautiful surroundings of Limenaria.',
       // Restaurant page
       'restaurant.page_label': 'Delicious Tradition',
       'restaurant.page_title': 'Molos Restaurant',
@@ -147,9 +148,24 @@
       'info.experiences_title': 'Experiences',
       'info.experiences_intro': 'Experience the natural beauty & diversity of Thassos island.',
       'info.experiences_paragraph': 'Thassos is a harmonic mosaic of green and blue. It has countless traits that make it an appealing destination to every potential traveller. With numerous beaches, some of them organized with umbrellas, sunbeds and even water sports facilities, while others are more private and unspoiled. Dive into the crystal clear waters of the beaches, relax under the sun and taste the local delicacies at the seaside taverns. Can you think of a better way to spend your holidays?',
+      'info.water_sports_title': 'Water Sports',
+      'info.water_sports_para1': 'All the main beaches of Thassos are supplied with floating platforms where professional instructors will initiate you into water-skiing, jet-skiing, paragliding or wind surfing.',
+      'info.water_sports_para2': 'For the lovers of the deep there are also numerous well organized & equipped scuba diving centers all over the island.',
+      'info.trekking_title': 'Trekking / Cycling',
+      'info.trekking_para1': 'Take advantage of Thassos\'s old footpaths which link the traditional villages and discover the interior of the island which remains almost completely undiscovered.',
+      'info.trekking_para2': 'Cycling is a unique way to explore the hidden and unspoiled parts of the Thassian countryside. Many biking tours are organized throughout the island.',
+      'info.stunning_beaches_title': 'Stunning Beaches',
+      'info.stunning_beaches_para1': 'Thassos is littered with dozens of amazing beaches and hidden coves all over the island, renowned for their crystal clear waters. Every visitor will find a beach of his liking to relax & enjoy, whether it is a sandy or a pebble one.',
+      'info.stunning_beaches_para2': 'The beauty of the island is undisputed and is considered one of the most diverse and beautiful islands on the Aegean sea.',
       'info.getting_here_label': 'Travel',
       'info.getting_here_title': 'Getting Here',
       'info.getting_here_intro': 'How to reach Thassos and Limenaria by ferry and car.',
+      'info.getting_here_para1': 'There is only one way to reach Thassos and that is by boat. The island has two ferry ports, the main one is in <strong>Limenas (Thassos Town)</strong>, the capital of the island. The route to Limenas is from <strong>Keramoti</strong> on the mainland and is the most popular route to get to Thassos. The reason for that is that during the summer months the boats run every half an hour and the journey time is only 35 minutes. The distance from Limenas to Limenaria is approximately 38 km\'s, take the island ring road and travel in an anti clockwise direction and follow the signs for Skala Prinos / Skala Kalirachi until you reach Limenaria.',
+      'info.getting_here_para2': 'The second port is located at <strong>Skala Prinos</strong> and is served from <strong>Kavala</strong>, this route has a journey time of approximately one and a half hour and has less frequent sailings, a maximum of 5 in a day during summer. From Skala Prinos, again travel in an anti clockwise direction for approximately 20 km\'s. Follow the signs for Skala Kalirachi / Skala Maries until you reach Limenaria.',
+      'info.getting_here_airports_title': 'Airports',
+      'info.getting_here_airports_para': 'Thassos does not have its own airport but is well served by <strong>Kavala Airport (Megas Alexandros)</strong> which is situated just 17 kilometres from Keramoti port. Kavala is mainly for charter flights during the summer from all over Europe but does have a twice daily connection service to Athens International Airport. Alternatively, <strong>Thessaloniki</strong>, just two hours away from Kavala, has a full international airport which also benefits from several budget airlines which use it. Car hire is simple and the journey to Kavala/Keramoti is straightforward using the road Odos Egnatia (E90).',
+      'info.getting_here_general_title': 'General',
+      'info.getting_here_general_para': 'As mentioned above, Thassos is fortunate to be very close to the <strong>Odos Egnatia (European E90)</strong> which is a super highway built to provide a backbone across the north of Greece. It runs from Igoumenitsa on the western Ionian Coast of Greece to Alexandroupolis on the east Aegean coast, close to the Turkish border. The E90 has good links to the south of Greece and all of the Balkans.',
       'info.footer_location': 'Lafeyra Hotel Thassos – Location',
       'info.footer_experiences': 'Lafeyra Hotel Thassos – Experiences',
       'info.footer_getting_here': 'Lafeyra Hotel Thassos – Getting Here',
@@ -242,6 +258,7 @@
       // Generic
       'common.read_more': 'READ MORE',
       'common.book_now': 'BOOK NOW',
+      'common.load_more': 'Load more',
     },
     el: {
       'nav.home': 'ΑΡΧΙΚΗ',
@@ -251,7 +268,7 @@
       'nav.location': 'ΤΟΠΟΘΕΣΙΑ',
       'nav.experiences': 'ΕΜΠΕΙΡΙΕΣ',
       'nav.getting_here': 'ΠΩΣ ΘΑ ΦΤΑΣΕΤΕ',
-      'nav.gallery': 'ΓΑΛΛΕΡΙΑ',
+      'nav.gallery': 'ΦΩΤΟΓΡΑΦΙΕΣ',
       'nav.restaurant': 'ΕΣΤΙΑΤΟΡΙΟ',
       'nav.contact': 'ΕΠΙΚΟΙΝΩΝΙΑ',
       'nav.book_now': 'ΚΡΑΤΗΣΗ',
@@ -346,6 +363,7 @@
       'rooms.request_availability': 'Ερώτηση διαθεσιμότητας',
       'gallery.discover': 'Ανακαλύψτε',
       'gallery.title': 'Γκαλερί',
+      'gallery.desc': 'Μια ματιά στην ατμόσφαιρα του LaFeyra Hotel και τα όμορφα περίχωρα της Λιμενάριας.',
       'restaurant.page_label': 'Νοστιμή Παράδοση',
       'restaurant.page_title': 'Εστιατόριο Molos',
       'restaurant.page_desc': 'Με θέα τις ήρεμες γαλάζιες θάλασσες του Αιγαίου, το εστιατόριο Molos σερβίρει νόστιμα ελληνικά πιάτα πιστά στις παραδοσιακές συνταγές και στη χρήση φρέσκων υλικών. Η απλότητα και η φρεσκάδα της ελληνικής κουζίνας υπόσχεται μια γαστρονομική εμπειρία που δεν θα ξεχάσετε. Κλασικά πιάτα συνδυάζονται με νέες δημιουργίες εμπνευσμένες από τη μεσογειακή και ελληνική κουζίνα με φρέσκα υλικά. Αρμονικά πιάτα, προσαρμοσμένα στις ανάγκες κάθε επισκέπτη, με μενού γεμάτο γεύσεις που θα θέλετε να δοκιμάσετε ξανά.',
@@ -363,15 +381,30 @@
       'info.location_paragraph': 'Η Θάσος προσελκύει χιλιάδες τουρίστες κάθε χρόνο, ειδικά το καλοκαίρι, αλλά είναι ιδανικός προορισμός και για φθινόπωρο και άνοιξη. Βρίσκεται πολύ κοντά στην ηπειρωτική Ελλάδα, με χαμηλό κόστος μεταφοράς σε σχέση με άλλα νησιά. Έχει πανέμορφες παραλίες με κρυστάλλινα νερά και πλούσια πράσινη φύση με πλατάνια και πεύκα. Ιδανικός συνδυασμός θάλασσας και βουνού.',
       'info.location_our_town': 'Το χωριό μας',
       'info.location_limenaria_title': 'Η Λιμενάρια',
-      'info.location_limenaria_1': 'Η Λιμενάρια είναι ένα όμορφο χωριό στο νοτιοδυτικό τμήμα του νησιού με μαγευτική θέα στο Αιγαίο. Ξεκίνησε να αναπτύσσεται λόγω των μεταλλείων. Το «Παλατάκι» είναι το πιο γνωστό αξιοθέατο και ένα από τα σημαντικότερα βιομηχανικά μνημεία της Μεσογείου, με κεντροευρωπαϊκή αρχιτεκτονική του Ιταλού αρχιτέκτονα Arigoni.',
+      'info.location_limenaria_1': 'Τα Λιμενάρια είναι ένα όμορφο χωριό στο νοτιοδυτικό τμήμα του νησιού με μαγευτική θέα στο Αιγαίο. Ξεκίνησε να αναπτύσσεται λόγω των μεταλλείων. Το «Παλατάκι» είναι το πιο γνωστό αξιοθέατο και ένα από τα σημαντικότερα βιομηχανικά μνημεία της Μεσογείου, με κεντροευρωπαϊκή αρχιτεκτονική του Ιταλού αρχιτέκτονα Arigoni.',
       'info.location_limenaria_2': 'Το λαογραφικό μουσείο στο κέντρο του χωριού εκθέτει κεραμικά, παραδοσιακές φορεσιές και αντικείμενα καθημερινής χρήσης. Στην κορυφή του λόφου βρίσκονται οι αποθήκες των μεταλλείων, όπου το καλοκαίρι γίνονται μουσικές και θεατρικές εκδηλώσεις. Ταβέρνες, εστιατόρια και μπαρ, ζωντανή νυχτερινή ζωή και εξαιρετικές τουριστικές υποδομές για αξέχαστες διακοπές.',
       'info.experiences_label': 'Ανακαλύψτε',
       'info.experiences_title': 'Εμπειρίες',
       'info.experiences_intro': 'Ζήστε τη φυσική ομορφιά και την πολυμορφία της Θάσου.',
       'info.experiences_paragraph': 'Η Θάσος είναι ένα αρμονικό μωσαϊκό πράσινου και γαλάζιου. Παραλίες οργανωμένες ή άγριες, κρυστάλλινα νερά, ηλιοθεραπεία και ντόπια πιάτα στις παραλίες. Μπορείτε να σκεφτείτε καλύτερο τρόπο για τις διακοπές σας;',
+      'info.water_sports_title': 'Υδάτινα σπορ',
+      'info.water_sports_para1': 'Στις κύριες παραλίες της Θάσου λειτουργούν πλωτές πλατφόρμες όπου επαγγελματίες monitors σας μυούν στο σκι στο νερό, jet ski, αλεξίπτωτο και wind surfing.',
+      'info.water_sports_para2': 'Για τους λάτρεις των βαθιών υπάρχουν επίσης πολλά οργανωμένα κέντρα καταδύσεων σε όλο το νησί.',
+      'info.trekking_title': 'Περπάτημα / Ποδήλατο',
+      'info.trekking_para1': 'Επωφεληθείτε από τα παλιά μονοπάτια της Θάσου που ενώνουν τα παραδοσιακά χωριά και ανακαλύψτε το εσωτερικό του νησιού που παραμένει σχεδόν ανεξερεύνητο.',
+      'info.trekking_para2': 'Το ποδήλατο είναι ένας μοναδικός τρόπος να εξερευνήσετε τα κρυφά και άγρια μέρη της θασίας ύπαιθρου. Στο νησί διοργανώνονται πολλές ποδηλατικές περιηγήσεις.',
+      'info.stunning_beaches_title': 'Υπέροχες παραλίες',
+      'info.stunning_beaches_para1': 'Η Θάσος είναι γεμάτη δεκάδες εκπληκτικές παραλίες και κρυφές ακτές με παγκόσμια φήμη για τα κρυστάλλινα νερά τους. Κάθε επισκέπτης θα βρει την παραλία που του ταιριάζει για ξεκούραση και απόλαυση, αμμώδη ή βραχώδη.',
+      'info.stunning_beaches_para2': 'Η ομορφιά του νησιού είναι αδιαμφισβήτητη και θεωρείται ένα από τα πιο πολύμορφα και όμορφα νησιά του Αιγαίου.',
       'info.getting_here_label': 'Ταξίδι',
       'info.getting_here_title': 'Πώς θα φτάσετε',
-      'info.getting_here_intro': 'Πώς να φτάσετε στη Θάσο και τη Λιμενάρια με πλοίο και αυτοκίνητο.',
+      'info.getting_here_intro': 'Πώς να φτάσετε στη Θάσο και τα Λιμενάρια με πλοίο και αυτοκίνητο.',
+      'info.getting_here_para1': 'Η Θάσος προσεγγίζεται μόνο με πλοίο. Το νησί έχει δύο λιμάνια: το κύριο είναι η <strong>Λιμένας (πόλη της Θάσου)</strong>, η πρωτεύουσα του νησιού. Η σύνδεση γίνεται από το <strong>Κεραμωτή</strong> στην ηπειρωτική Ελλάδα και είναι η πιο δημοφιλής διαδρομή. Το καλοκαίρι τα πλοία κάνουν δρομολόγια κάθε μισή ώρα και η διαδρομή διαρκεί περίπου 35 λεπτά. Η απόσταση από το Λιμένα στα Λιμενάρια είναι περίπου 38 χλμ· ακολουθήστε τον κυκλικό δρόμο του νησιού αντίθετα από τη φορά των δεικτών και τις πινακίδες για Σκάλα Πρίνου / Σκάλα Καλλιράχης μέχρι τη Λιμενάρια.',
+      'info.getting_here_para2': 'Το δεύτερο λιμάνι είναι η <strong>Σκάλα Πρίνου</strong>, με συνδέσεις από την <strong>Καβάλα</strong>. Η διαδρομή διαρκεί περίπου μιάμιση ώρα και τα δρομολόγια είναι λιγότερα (μέχρι 5 την ημέρα το καλοκαίρι). Από τη Σκάλα Πρίνου ακολουθήστε ξανά αντίθετα από τη φορά των δεικτών για περίπου 20 χλμ. και τις πινακίδες για Σκάλα Καλλιράχη / Σκάλα Μαριές μέχρι τη Λιμενάρια.',
+      'info.getting_here_airports_title': 'Αεροδρόμια',
+      'info.getting_here_airports_para': 'Η Θάσος δεν έχει δικό της αεροδρόμιο, αλλά εξυπηρετείται καλά από το <strong>αεροδρόμιο Καβάλας (Μέγας Αλέξανδρος)</strong>, 17 χλμ. από το λιμάνι του Κεραμωτή. Η Καβάλα δέχεται κυρίως charter το καλοκαίρι από όλη την Ευρώπη και έχει δύο δρομολόγια καθημερινά προς το αεροδρόμιο Αθηνών. Εναλλακτικά, η <strong>Θεσσαλονίκη</strong>, δύο ώρες από την Καβάλα, έχει πλήρες διεθνές αεροδρόμιο και πολλές low-cost πτήσεις. Η ενοικίαση αυτοκινήτου είναι απλή και η διαδρομή προς Καβάλα/Κεραμωτή γίνεται εύκολα μέσω της Οδού Egnatia (E90).',
+      'info.getting_here_general_title': 'Γενικά',
+      'info.getting_here_general_para': 'Η Θάσος βρίσκεται κοντά στην <strong>Όδο Egnatia (Ευρωπαϊκή E90)</strong>, τον κεντρικό οδικό άξονα της βόρειας Ελλάδας. Η E90 συνδέει την Ηγουμενίτσα στα δυτικά με την Αλεξανδρούπολη στα ανατολικά, κοντά στα τουρκικά σύνορα, και έχει καλές συνδέσεις με τη νότια Ελλάδα και τα Βαλκάνια.',
       'info.footer_location': 'Lafeyra Hotel Thassos – Τοποθεσία',
       'info.footer_experiences': 'Lafeyra Hotel Thassos – Εμπειρίες',
       'info.footer_getting_here': 'Lafeyra Hotel Thassos – Πώς θα φτάσετε',
@@ -461,6 +494,7 @@
       'room.grid_desc_deluxe_triple_suite': 'Η deluxe τριπλή σουίτα είναι ευρύχωρη και φιλοξενεί έως τρία άτομα. Διαθέτει διπλό κρεβάτι και καναπέ-κρεβάτι, ευρύχωρη ντουλάπα, μίνι ψυγείο, δύο μοντέρνα μπάνια και όλες τις απαραίτητες παροχές για άνετη διαμονή σας.',
       'common.read_more': 'ΔΙΑΒΑΣΤΕ ΠΕΡΙΣΣΟΤΕΡΑ',
       'common.book_now': 'ΚΡΑΤΗΣΗ',
+      'common.load_more': 'Φόρτωση περισσότερων',
     }
   };
 
@@ -495,8 +529,10 @@
 
   function updateSwitcher(lang) {
     document.querySelectorAll('.lang-btn').forEach(function (btn) {
-      var isActive = btn.getAttribute('data-lang') === lang;
+      var btnLang = btn.getAttribute('data-lang');
+      var isActive = btnLang === lang;
       btn.setAttribute('aria-pressed', isActive);
+      btn.setAttribute('aria-label', btnLang === 'en' ? 'English' : 'Ελληνικά');
       btn.classList.toggle('active', isActive);
     });
   }
