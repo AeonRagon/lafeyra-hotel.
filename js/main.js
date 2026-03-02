@@ -6,6 +6,21 @@
 (function () {
   'use strict';
 
+  // ----- Canonical URL (κύρια διεύθυνση χωρίς /el/ για Google) -----
+  (function () {
+    var canonical = document.querySelector('link[rel="canonical"]');
+    var path = (window.location.pathname || '/').replace(/^\/el\/?/, '/') || '/';
+    var href = 'https://lafeyra-hotel.gr' + (path === '/' ? '/' : path);
+    if (canonical) {
+      canonical.setAttribute('href', href);
+    } else {
+      var link = document.createElement('link');
+      link.rel = 'canonical';
+      link.href = href;
+      document.head.appendChild(link);
+    }
+  })();
+
   // ----- Smooth scroll for # links -----
   function scrollToElement(selector) {
     var el = document.querySelector(selector);
@@ -426,5 +441,29 @@
 
     if (carouselPrev) carouselPrev.addEventListener('click', function () { scrollToSlide('prev'); });
     if (carouselNext) carouselNext.addEventListener('click', function () { scrollToSlide('next'); });
+  }
+
+  // ----- Restaurant gallery: show first 16, then "Load more" -----
+  var restaurantGrid = document.querySelector('.restaurant-gallery-grid');
+  var loadMoreWrap = document.getElementById('restaurant-load-more-wrap');
+  var loadMoreBtn = document.getElementById('restaurant-load-more');
+  if (restaurantGrid && loadMoreWrap && loadMoreBtn) {
+    var items = restaurantGrid.querySelectorAll('.gallery-item');
+    var initialCount = 16;
+    for (var i = initialCount; i < items.length; i++) {
+      items[i].style.display = 'none';
+      items[i].setAttribute('data-restaurant-hidden', '1');
+    }
+    if (items.length <= initialCount) {
+      loadMoreWrap.style.display = 'none';
+    } else {
+      loadMoreBtn.addEventListener('click', function () {
+        restaurantGrid.querySelectorAll('[data-restaurant-hidden="1"]').forEach(function (el) {
+          el.style.display = '';
+          el.removeAttribute('data-restaurant-hidden');
+        });
+        loadMoreWrap.style.display = 'none';
+      });
+    }
   }
 })();
