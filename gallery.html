@@ -77,16 +77,8 @@
             A glimpse into the ambience of Lafeyra Hotel and the beautiful surroundings of Limenaria.
           </p>
         </header>
-        <div class="gallery-grid">
-          <a href="https://picsum.photos/seed/gallery1/1110/570" class="gallery-item gallery-lightbox" data-caption="Hotel exterior">
-            <img src="https://picsum.photos/seed/gallery1/1110/570" alt="Hotel exterior" width="1110" height="570" />
-          </a>
-          <a href="https://picsum.photos/seed/gallery2/1110/600" class="gallery-item gallery-lightbox" data-caption="Sea and beach">
-            <img src="https://picsum.photos/seed/gallery2/1110/600" alt="Sea and beach" width="1110" height="600" />
-          </a>
-          <a href="https://picsum.photos/seed/gallery3/376/308" class="gallery-item gallery-lightbox" data-caption="Room interior">
-            <img src="https://picsum.photos/seed/gallery3/376/308" alt="Room interior" width="376" height="308" />
-          </a>
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Φωτό φορτώνονται από data/gallery.js (images-resized/gallery). Βάλε τις φωτό στο images-to-resize/gallery, τρέξε resize, και πρόσθεσε στο data/gallery.js -->
         </div>
       </div>
     </section>
@@ -139,8 +131,24 @@
   </div>
 
   <script src="data/rooms.js"></script>
+  <script src="data/gallery.js"></script>
   <script src="js/i18n.js"></script>
   <script src="js/rooms-render.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    (function() {
+      var grid = document.getElementById('gallery-grid');
+      var list = window.GALLERY_IMAGES || [];
+      if (list.length === 0) {
+        grid.innerHTML = '<p class="section-desc" style="grid-column:1/-1; text-align:center;"><span data-i18n="gallery.empty">Gallery photos will appear here soon.</span></p>';
+        return;
+      }
+      grid.innerHTML = list.map(function(item) {
+        var src = item.src || '';
+        var caption = (item.caption || '').replace(/"/g, '&quot;');
+        return '<a href="' + src + '" class="gallery-item gallery-lightbox" data-caption="' + caption + '"><img src="' + src + '" alt="' + caption + '" loading="lazy" /></a>';
+      }).join('');
+    })();
+  </script>
 </body>
 </html>

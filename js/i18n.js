@@ -123,6 +123,7 @@
       'gallery.discover': 'Discover',
       'gallery.title': 'Gallery',
       'gallery.desc': 'A glimpse into the ambience of Lafeyra Hotel and the beautiful surroundings of Limenaria.',
+      'gallery.empty': 'Gallery photos will appear here soon.',
       // Restaurant page
       'restaurant.page_label': 'Delicious Tradition',
       'restaurant.page_title': 'Molos Restaurant',
@@ -135,6 +136,7 @@
       'restaurant.facebook_link': 'Molos Restaurant – Facebook',
       'restaurant.gallery_label': 'Gallery',
       'restaurant.gallery_intro': 'A glimpse of our restaurant, terrace and dishes.',
+      'restaurant.load_more': 'Load more',
       // Info pages
       'info.location_label': 'Discover',
       'info.location_title': 'Location',
@@ -364,6 +366,7 @@
       'gallery.discover': 'Ανακαλύψτε',
       'gallery.title': 'Γκαλερί',
       'gallery.desc': 'Μια ματιά στην ατμόσφαιρα του LaFeyra Hotel και τα όμορφα περίχωρα της Λιμενάριας.',
+      'gallery.empty': 'Οι φωτό της γκαλερί θα εμφανιστούν σύντομα.',
       'restaurant.page_label': 'Νοστιμή Παράδοση',
       'restaurant.page_title': 'Εστιατόριο Molos',
       'restaurant.page_desc': 'Με θέα τις ήρεμες γαλάζιες θάλασσες του Αιγαίου, το εστιατόριο Molos σερβίρει νόστιμα ελληνικά πιάτα πιστά στις παραδοσιακές συνταγές και στη χρήση φρέσκων υλικών. Η απλότητα και η φρεσκάδα της ελληνικής κουζίνας υπόσχεται μια γαστρονομική εμπειρία που δεν θα ξεχάσετε. Κλασικά πιάτα συνδυάζονται με νέες δημιουργίες εμπνευσμένες από τη μεσογειακή και ελληνική κουζίνα με φρέσκα υλικά. Αρμονικά πιάτα, προσαρμοσμένα στις ανάγκες κάθε επισκέπτη, με μενού γεμάτο γεύσεις που θα θέλετε να δοκιμάσετε ξανά.',
@@ -375,6 +378,7 @@
       'restaurant.facebook_link': 'Molos Restaurant – Facebook',
       'restaurant.gallery_label': 'Γκαλερί',
       'restaurant.gallery_intro': 'Μια ματιά στο εστιατόριο, τη βεράντα και τα πιάτα μας.',
+      'restaurant.load_more': 'Φόρτωση περισσότερων',
       'info.location_label': 'Ανακαλύψτε',
       'info.location_title': 'Τοποθεσία',
       'info.location_intro': 'Ζήστε τη φυσική ομορφιά και την πολυμορφία της Θάσου.',
